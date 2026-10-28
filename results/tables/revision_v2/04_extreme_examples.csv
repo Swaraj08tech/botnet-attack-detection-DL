@@ -1,0 +1,10 @@
+feature,value,row_position,attack_cat,sbytes,dbytes,spkts,dpkts
+fe_total_bytes,14562299,82938,DoS,70506,14491793,1638,10850
+fe_total_bytes,13027669,97188,Exploits,12965233,62436,9616,1452
+fe_total_bytes,12655197,62042,Exploits,12594395,60802,9492,1414
+fe_byte_balance,1,15,Normal,138,0,2,0
+fe_byte_balance,1,29,Normal,1414,0,2,0
+fe_byte_balance,1,33,Normal,168,0,2,0
+fe_packet_balance,1,15,Normal,138,0,2,0
+fe_packet_balance,1,29,Normal,1414,0,2,0
+fe_packet_balance,1,33,Normal,168,0,2,0

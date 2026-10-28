@@ -1,0 +1,43 @@
+feature,evidence_status,deployment_availability,requirement
+dur,CSV observation; full field-by-field semantics not verified here,unverified,Verify units and completed-flow vs early-prediction availability
+proto,CSV observation; full field-by-field semantics not verified here,unverified,Verify units and completed-flow vs early-prediction availability
+service,Documented service category with fallback marker,unverified,Retain '-' pending extractor-specific interpretation
+state,CSV observation; full field-by-field semantics not verified here,unverified,Verify units and completed-flow vs early-prediction availability
+spkts,CSV observation; full field-by-field semantics not verified here,unverified,Verify units and completed-flow vs early-prediction availability
+dpkts,CSV observation; full field-by-field semantics not verified here,unverified,Verify units and completed-flow vs early-prediction availability
+sbytes,CSV observation; full field-by-field semantics not verified here,unverified,Verify units and completed-flow vs early-prediction availability
+dbytes,CSV observation; full field-by-field semantics not verified here,unverified,Verify units and completed-flow vs early-prediction availability
+rate,CSV observation; full field-by-field semantics not verified here,unverified,Verify units and completed-flow vs early-prediction availability
+sttl,CSV observation; full field-by-field semantics not verified here,unverified,Verify units and completed-flow vs early-prediction availability
+dttl,CSV observation; full field-by-field semantics not verified here,unverified,Verify units and completed-flow vs early-prediction availability
+sload,CSV observation; full field-by-field semantics not verified here,unverified,Verify units and completed-flow vs early-prediction availability
+dload,CSV observation; full field-by-field semantics not verified here,unverified,Verify units and completed-flow vs early-prediction availability
+sloss,CSV observation; full field-by-field semantics not verified here,unverified,Verify units and completed-flow vs early-prediction availability
+dloss,CSV observation; full field-by-field semantics not verified here,unverified,Verify units and completed-flow vs early-prediction availability
+sinpkt,CSV observation; full field-by-field semantics not verified here,unverified,Verify units and completed-flow vs early-prediction availability
+dinpkt,CSV observation; full field-by-field semantics not verified here,unverified,Verify units and completed-flow vs early-prediction availability
+sjit,CSV observation; full field-by-field semantics not verified here,unverified,Verify units and completed-flow vs early-prediction availability
+djit,CSV observation; full field-by-field semantics not verified here,unverified,Verify units and completed-flow vs early-prediction availability
+swin,CSV observation; full field-by-field semantics not verified here,unverified,Verify units and completed-flow vs early-prediction availability
+stcpb,CSV observation; full field-by-field semantics not verified here,unverified,Verify units and completed-flow vs early-prediction availability
+dtcpb,CSV observation; full field-by-field semantics not verified here,unverified,Verify units and completed-flow vs early-prediction availability
+dwin,CSV observation; full field-by-field semantics not verified here,unverified,Verify units and completed-flow vs early-prediction availability
+tcprtt,CSV observation; full field-by-field semantics not verified here,unverified,Verify units and completed-flow vs early-prediction availability
+synack,CSV observation; full field-by-field semantics not verified here,unverified,Verify units and completed-flow vs early-prediction availability
+ackdat,CSV observation; full field-by-field semantics not verified here,unverified,Verify units and completed-flow vs early-prediction availability
+smean,CSV observation; full field-by-field semantics not verified here,unverified,Verify units and completed-flow vs early-prediction availability
+dmean,CSV observation; full field-by-field semantics not verified here,unverified,Verify units and completed-flow vs early-prediction availability
+trans_depth,CSV observation; full field-by-field semantics not verified here,unverified,Verify units and completed-flow vs early-prediction availability
+response_body_len,CSV observation; full field-by-field semantics not verified here,unverified,Verify units and completed-flow vs early-prediction availability
+ct_srv_src,Creator-described cross-flow connection counter,unverified,"Verify past-only window, endpoint state, timing and resets"
+ct_state_ttl,Creator-described additional aggregate,unverified,"Verify aggregation scope, lineage and prediction-time availability"
+ct_dst_ltm,Creator-described cross-flow connection counter,unverified,"Verify past-only window, endpoint state, timing and resets"
+ct_src_dport_ltm,Creator-described cross-flow connection counter,unverified,"Verify past-only window, endpoint state, timing and resets"
+ct_dst_sport_ltm,Creator-described cross-flow connection counter,unverified,"Verify past-only window, endpoint state, timing and resets"
+ct_dst_src_ltm,Creator-described cross-flow connection counter,unverified,"Verify past-only window, endpoint state, timing and resets"
+is_ftp_login,Intended binary indicator; local values violate binary range,unverified,Resolve extractor/version discrepancy before semantic recoding
+ct_ftp_cmd,Creator-described additional aggregate,unverified,"Verify aggregation scope, lineage and prediction-time availability"
+ct_flw_http_mthd,Creator-described additional aggregate,unverified,"Verify aggregation scope, lineage and prediction-time availability"
+ct_src_ltm,Creator-described cross-flow connection counter,unverified,"Verify past-only window, endpoint state, timing and resets"
+ct_srv_dst,Creator-described cross-flow connection counter,unverified,"Verify past-only window, endpoint state, timing and resets"
+is_sm_ips_ports,CSV observation; full field-by-field semantics not verified here,unverified,Verify units and completed-flow vs early-prediction availability

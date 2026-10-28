@@ -1,0 +1,3 @@
+feature set,MLP (mean of 3 seeds),LightGBM,MLP false-positive rate (mean),LightGBM false-positive rate,MLP Worms correct (each seed),LightGBM Worms correct
+original42,0.5197528558455495,0.6307189787713879,0.10458333333333332,0.0846428571428571,"[0, 0, 0]",8
+total_and_byte44,0.524149229038454,0.6319539595721987,0.11678571428571428,0.0844642857142857,"[0, 0, 0]",9

@@ -1,0 +1,7 @@
+dataset,check,rows
+train,service_dash,94168
+train,nonbinary_ftp_login,22
+train,ftp_field_mismatch,0
+test,service_dash,47153
+test,nonbinary_ftp_login,4
+test,ftp_field_mismatch,8

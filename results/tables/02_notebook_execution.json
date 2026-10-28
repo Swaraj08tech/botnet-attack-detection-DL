@@ -1,0 +1,18 @@
+{
+  "execution": "Jupyter/nbclient in project .venv",
+  "working_directory": ".",
+  "code_cells": 16,
+  "executed_code_cells": 16,
+  "errors": 0,
+  "protected_before": {
+    "notebooks\\01_data_understanding.ipynb": "97bcae6a8e4a2700704d4a3ea1424289f28dc5afd0feebc9cc875b8721c125dc",
+    "data\\raw\\UNSW_NB15_training-set.csv": "bec7dd5ec88dc2a0ccc7a07879d338395ed7421750f675fd0339e07dfe0648fa",
+    "data\\raw\\UNSW_NB15_testing-set.csv": "734fe6642edf758f7c94d7d9149426b49d202fe8e7bf0bef47392489c3c0a559"
+  },
+  "protected_after": {
+    "notebooks\\01_data_understanding.ipynb": "97bcae6a8e4a2700704d4a3ea1424289f28dc5afd0feebc9cc875b8721c125dc",
+    "data\\raw\\UNSW_NB15_training-set.csv": "bec7dd5ec88dc2a0ccc7a07879d338395ed7421750f675fd0339e07dfe0648fa",
+    "data\\raw\\UNSW_NB15_testing-set.csv": "734fe6642edf758f7c94d7d9149426b49d202fe8e7bf0bef47392489c3c0a559"
+  },
+  "vscode_ui_run_verified": false
+}

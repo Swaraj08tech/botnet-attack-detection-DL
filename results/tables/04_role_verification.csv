@@ -1,0 +1,4 @@
+role,rows,original_columns,engineered_columns,original_values_preserved,row_order_labels_preserved,finite,csv_reload_exact
+train,140273,42,3,True,True,True,True
+model_selection,17534,42,3,True,True,True,True
+calibration,17534,42,3,True,True,True,True

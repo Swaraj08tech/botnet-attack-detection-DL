@@ -1,0 +1,3 @@
+file,rows,distinct patterns,patterns that repeat,rows inside a repeated pattern,extra copies (rows - patterns),largest pattern (rows)
+training,175341,101040,9748,84049,74301,415
+testing,82332,53946,6318,34704,28386,88

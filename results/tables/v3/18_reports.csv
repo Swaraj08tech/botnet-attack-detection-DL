@@ -1,0 +1,61 @@
+alert,true class,predicted,mode,valid JSON,items,supported,seconds
+8270,Analysis,Analysis,RAG,True,8,6,31.301470279693604
+8270,Analysis,Analysis,no sources,True,9,6,9.578653812408447
+8086,Analysis,Analysis,RAG,True,9,7,12.116801023483276
+8086,Analysis,Analysis,no sources,True,9,5,9.98604941368103
+9821,Analysis,Analysis,RAG,True,8,8,10.696366310119629
+9821,Analysis,Analysis,no sources,True,9,6,9.446497678756714
+4751,Backdoor,Backdoor,RAG,True,6,6,7.616862535476685
+4751,Backdoor,Backdoor,no sources,True,8,5,8.521568536758423
+4764,Backdoor,Backdoor,RAG,True,7,7,9.33124828338623
+4764,Backdoor,Backdoor,no sources,True,9,4,9.064231872558594
+4761,Backdoor,Backdoor,RAG,True,7,7,9.244266510009766
+4761,Backdoor,Backdoor,no sources,True,9,5,8.744112730026245
+10812,DoS,DoS,RAG,True,8,8,8.71787142753601
+10812,DoS,DoS,no sources,True,9,5,8.94973611831665
+9358,DoS,DoS,RAG,True,8,8,10.7489333152771
+9358,DoS,DoS,no sources,True,8,3,7.9584736824035645
+14031,DoS,DoS,RAG,True,6,5,7.9920854568481445
+14031,DoS,DoS,no sources,True,8,4,8.369007349014282
+11586,Exploits,Exploits,RAG,True,8,6,10.751067399978638
+11586,Exploits,Exploits,no sources,True,9,6,9.29650330543518
+9772,Exploits,Exploits,RAG,True,8,8,11.116638660430908
+9772,Exploits,Exploits,no sources,True,8,5,8.932312488555908
+10441,Exploits,Exploits,RAG,True,8,5,9.766766786575317
+10441,Exploits,Exploits,no sources,True,9,6,9.719660997390747
+12209,Fuzzers,Fuzzers,RAG,True,8,8,9.215739965438843
+12209,Fuzzers,Fuzzers,no sources,True,9,7,9.28159761428833
+10399,Fuzzers,Fuzzers,RAG,True,7,5,9.901375770568848
+10399,Fuzzers,Fuzzers,no sources,True,8,4,8.371654510498047
+6581,Fuzzers,Fuzzers,RAG,True,8,6,9.183441877365112
+6581,Fuzzers,Fuzzers,no sources,True,8,5,9.36280369758606
+16839,Generic,Generic,RAG,True,9,7,10.996952056884766
+16839,Generic,Generic,no sources,True,8,4,8.496995687484741
+15328,Generic,Generic,RAG,True,9,9,11.933772563934326
+15328,Generic,Generic,no sources,True,8,4,8.544399976730347
+11988,Generic,Generic,RAG,True,8,8,9.574724435806274
+11988,Generic,Generic,no sources,True,8,4,8.342900276184082
+6392,Reconnaissance,Reconnaissance,RAG,True,8,8,9.971973657608032
+6392,Reconnaissance,Reconnaissance,no sources,True,9,5,9.308912754058838
+13268,Reconnaissance,Reconnaissance,RAG,True,8,6,9.31255292892456
+13268,Reconnaissance,Reconnaissance,no sources,True,8,4,8.574829578399658
+5714,Reconnaissance,Reconnaissance,RAG,True,8,8,9.526142835617065
+5714,Reconnaissance,Reconnaissance,no sources,True,8,4,8.589727878570557
+6810,Shellcode,Shellcode,RAG,True,8,8,9.992793321609497
+6810,Shellcode,Shellcode,no sources,True,8,7,9.141800165176392
+9328,Shellcode,Shellcode,RAG,True,8,8,9.127864122390747
+9328,Shellcode,Shellcode,no sources,True,7,6,8.27701210975647
+5242,Shellcode,Shellcode,RAG,True,8,8,9.093884468078613
+5242,Shellcode,Shellcode,no sources,True,9,7,9.3637113571167
+5323,Worms,Worms,RAG,True,7,5,9.236463069915771
+5323,Worms,Worms,no sources,True,9,7,9.485274076461792
+15173,Worms,Worms,RAG,True,7,5,8.411818265914917
+15173,Worms,Worms,no sources,True,8,4,8.763428211212158
+7905,Worms,Worms,RAG,True,8,6,9.482556104660034
+7905,Worms,Worms,no sources,True,9,5,9.73020625114441
+10416,Fuzzers,DoS,RAG,True,7,7,8.863117456436157
+10416,Fuzzers,DoS,no sources,True,8,4,8.160208940505981
+9216,Exploits,DoS,RAG,True,9,7,11.306864500045776
+9216,Exploits,DoS,no sources,True,9,5,8.918662309646606
+10624,Exploits,DoS,RAG,True,8,6,10.861438035964966
+10624,Exploits,DoS,no sources,True,9,5,9.228046417236328

@@ -1,0 +1,27 @@
+{
+  "version": "neural_reference_review_v2",
+  "mode": "Fresh-kernel replay of frozen models; no predictive model fit or retuning",
+  "notebook_sha256": "6637442714b2400a17f1ddfa332d2aa0d85886e6663a93719c9244b711e7f819",
+  "python": "D:\\projects\\Botnet attack detection\\.venv\\Scripts\\python.exe",
+  "sources_sha256": {
+    "src/neural_reference.py": "138945ebba4b5c3441090bdea7d8da4ded2e4c3aa24ea09f0edbe70b9c7ee25b",
+    "src/neural_reference_finish.py": "a95e72d6e1e09626b17c1f8f9814294edf74e1806be2443460605e4863a5a5ed",
+    "src/neural_reference_seal.py": "b7e81d2cbc2d1cedac3154c8147ae77228e71cbc31faa44f0024dd059d4e0a42",
+    "scripts/run_neural_reference.py": "9658be7acaf6ea14c004f450cdad97fe790b3db0d5ffda64654da0f8c10642c7",
+    "scripts/verify_neural_reference.py": "7bf9dce627480d5b9593218f6ae20ee5ab7a5a957b66c5a666f5278b23a04a8b",
+    "scripts/finish_neural_reference_presentation.py": "9a97ab5695a02429e259c9e3bb01dfa33196b0b626a13c1d6305d310ee161150",
+    "scripts/check_neural_runtime.py": "6f003c227b59139ea473180a3afb14ee0908ddd14d9c08a5b83a85ac52b7e502",
+    "tests/test_neural_reference.py": "f0d7ad859456a38b42ba90a802dfd19d7028f772dbd3ddf68f00e481e0f01ba2",
+    "tests/test_neural_reference_seal.py": "4f2e2e9e115b356ecf5df4c60a6b6c9f590fce3257ae34cc0761d83cca6c8784"
+  },
+  "fresh_kernel": true,
+  "code_cells": 8,
+  "errors": 0,
+  "artifacts_verified": 8,
+  "protected_files": 723,
+  "protected_unchanged": true,
+  "calibration_targets_loaded": false,
+  "official_test_records_loaded": false,
+  "manifest_sha256": "dbd35799b01197a22d33276aa74e3f0e26bc3ef1b9d4194ab5cac98d4cc34c49",
+  "independent_verification": "Pending scripts/verify_neural_reference.py; not an ongoing validity claim"
+}

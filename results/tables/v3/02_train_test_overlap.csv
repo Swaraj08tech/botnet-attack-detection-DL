@@ -1,0 +1,6 @@
+,count
+shared distinct patterns,1302
+... with the same single label in both files,754
+... with conflicting labels,548
+test rows that also appear in training,8541
+test rows that are new,73791

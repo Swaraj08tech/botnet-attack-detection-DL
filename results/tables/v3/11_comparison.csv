@@ -1,0 +1,4 @@
+comparison,seed,difference,95% low,95% high,verdict
+multi-scale vs single-scale,42,-0.011474268004513899,-0.022723809321881783,-0.0022135238696077285,second clearly better
+multi-scale vs single-scale,43,0.01020486259154696,-0.0004974665480923537,0.020633802476527775,could be chance
+multi-scale vs single-scale,44,0.01811799975433037,0.009828511191957063,0.027148590207243,first clearly better

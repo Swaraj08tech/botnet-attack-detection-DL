@@ -1,0 +1,11 @@
+{
+  "notebook": "notebooks/06_baseline_models.ipynb",
+  "notebook_sha256": "10559bdd6445098cfa127bea1c01f47487e4356d7a5093448f3e92e662c17768",
+  "python": "D:\\projects\\Botnet attack detection\\.venv\\Scripts\\python.exe",
+  "code_cells": 9,
+  "errors": 0,
+  "manifest_sha256": "c9b70067beb4f27975db5abcbe25a4b53ccad6c553397053e43d20a25681f32e",
+  "verified_artifacts": 141,
+  "protected_files": 374,
+  "protected_unchanged": true
+}

@@ -1,0 +1,11 @@
+attack_cat,rows,distinct_feature_groups
+Analysis,1600,1274
+Backdoor,1397,1227
+DoS,9811,3044
+Exploits,26714,15876
+Fuzzers,14547,12919
+Generic,32000,3342
+Normal,44800,41512
+Reconnaissance,8393,6033
+Shellcode,907,874
+Worms,104,102

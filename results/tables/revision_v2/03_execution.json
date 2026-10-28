@@ -1,0 +1,11 @@
+{
+  "notebook": "notebooks/03_training_eda_and_leakage_safe_preprocessing.ipynb",
+  "notebook_sha256": "f98ae697f5a7dca7bebd28764c82aad9d4cf2fbb75b2fbfb5ceeedb6161b1e72",
+  "python": "D:\\projects\\Botnet attack detection\\.venv\\Scripts\\python.exe",
+  "code_cells": 7,
+  "errors": 0,
+  "manifest_sha256": "fdcddf2730fd868ef37256f4204909f001a314fb57b3ea05b3b71a286c9a788e",
+  "verified_artifacts": 27,
+  "protected_files": 374,
+  "protected_unchanged": true
+}

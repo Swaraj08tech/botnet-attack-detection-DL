@@ -1,0 +1,3 @@
+file,patterns with a Normal/Attack conflict,rows affected (binary),patterns with a category conflict,rows affected (category),share of rows affected (category) %
+training,229,940,1772,30528,17.410645542115077
+testing,6,14,575,8809,10.699363552446194

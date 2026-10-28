@@ -1,0 +1,43 @@
+feature,definition_status,prediction_scope,unresolved
+dur,CSV observation; full field-by-field semantics not verified here,Completed-flow benchmark,Earliest availability and extraction details not verified
+proto,CSV observation; full field-by-field semantics not verified here,Completed-flow benchmark,Earliest availability and extraction details not verified
+service,Documented service category with fallback marker,Completed-flow benchmark,Earliest availability and extraction details not verified
+state,CSV observation; full field-by-field semantics not verified here,Completed-flow benchmark,Earliest availability and extraction details not verified
+spkts,CSV observation; full field-by-field semantics not verified here,Completed-flow benchmark,Earliest availability and extraction details not verified
+dpkts,CSV observation; full field-by-field semantics not verified here,Completed-flow benchmark,Earliest availability and extraction details not verified
+sbytes,CSV observation; full field-by-field semantics not verified here,Completed-flow benchmark,Earliest availability and extraction details not verified
+dbytes,CSV observation; full field-by-field semantics not verified here,Completed-flow benchmark,Earliest availability and extraction details not verified
+rate,CSV observation; full field-by-field semantics not verified here,Completed-flow benchmark,Earliest availability and extraction details not verified
+sttl,CSV observation; full field-by-field semantics not verified here,Completed-flow benchmark,Earliest availability and extraction details not verified
+dttl,CSV observation; full field-by-field semantics not verified here,Completed-flow benchmark,Earliest availability and extraction details not verified
+sload,CSV observation; full field-by-field semantics not verified here,Completed-flow benchmark,Earliest availability and extraction details not verified
+dload,CSV observation; full field-by-field semantics not verified here,Completed-flow benchmark,Earliest availability and extraction details not verified
+sloss,CSV observation; full field-by-field semantics not verified here,Completed-flow benchmark,Earliest availability and extraction details not verified
+dloss,CSV observation; full field-by-field semantics not verified here,Completed-flow benchmark,Earliest availability and extraction details not verified
+sinpkt,CSV observation; full field-by-field semantics not verified here,Completed-flow benchmark,Earliest availability and extraction details not verified
+dinpkt,CSV observation; full field-by-field semantics not verified here,Completed-flow benchmark,Earliest availability and extraction details not verified
+sjit,CSV observation; full field-by-field semantics not verified here,Completed-flow benchmark,Earliest availability and extraction details not verified
+djit,CSV observation; full field-by-field semantics not verified here,Completed-flow benchmark,Earliest availability and extraction details not verified
+swin,CSV observation; full field-by-field semantics not verified here,Completed-flow benchmark,Earliest availability and extraction details not verified
+stcpb,CSV observation; full field-by-field semantics not verified here,Completed-flow benchmark,Earliest availability and extraction details not verified
+dtcpb,CSV observation; full field-by-field semantics not verified here,Completed-flow benchmark,Earliest availability and extraction details not verified
+dwin,CSV observation; full field-by-field semantics not verified here,Completed-flow benchmark,Earliest availability and extraction details not verified
+tcprtt,CSV observation; full field-by-field semantics not verified here,Completed-flow benchmark,Earliest availability and extraction details not verified
+synack,CSV observation; full field-by-field semantics not verified here,Completed-flow benchmark,Earliest availability and extraction details not verified
+ackdat,CSV observation; full field-by-field semantics not verified here,Completed-flow benchmark,Earliest availability and extraction details not verified
+smean,CSV observation; full field-by-field semantics not verified here,Completed-flow benchmark,Earliest availability and extraction details not verified
+dmean,CSV observation; full field-by-field semantics not verified here,Completed-flow benchmark,Earliest availability and extraction details not verified
+trans_depth,CSV observation; full field-by-field semantics not verified here,Completed-flow benchmark,Earliest availability and extraction details not verified
+response_body_len,CSV observation; full field-by-field semantics not verified here,Completed-flow benchmark,Earliest availability and extraction details not verified
+ct_srv_src,Creator-described cross-flow connection counter,Completed flow plus connection history,Past-only ordering/window and endpoint extraction unavailable
+ct_state_ttl,Creator-described additional aggregate,Completed-flow benchmark,Earliest availability and extraction details not verified
+ct_dst_ltm,Creator-described cross-flow connection counter,Completed flow plus connection history,Past-only ordering/window and endpoint extraction unavailable
+ct_src_dport_ltm,Creator-described cross-flow connection counter,Completed flow plus connection history,Past-only ordering/window and endpoint extraction unavailable
+ct_dst_sport_ltm,Creator-described cross-flow connection counter,Completed flow plus connection history,Past-only ordering/window and endpoint extraction unavailable
+ct_dst_src_ltm,Creator-described cross-flow connection counter,Completed flow plus connection history,Past-only ordering/window and endpoint extraction unavailable
+is_ftp_login,Intended binary indicator; local values violate binary range,Completed-flow benchmark,Earliest availability and extraction details not verified
+ct_ftp_cmd,Creator-described additional aggregate,Completed-flow benchmark,Earliest availability and extraction details not verified
+ct_flw_http_mthd,Creator-described additional aggregate,Completed-flow benchmark,Earliest availability and extraction details not verified
+ct_src_ltm,Creator-described cross-flow connection counter,Completed flow plus connection history,Past-only ordering/window and endpoint extraction unavailable
+ct_srv_dst,Creator-described cross-flow connection counter,Completed flow plus connection history,Past-only ordering/window and endpoint extraction unavailable
+is_sm_ips_ports,CSV observation; full field-by-field semantics not verified here,Completed-flow benchmark,Earliest availability and extraction details not verified

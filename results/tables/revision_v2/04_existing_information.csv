@@ -1,0 +1,4 @@
+candidate,existing,exact_rows,within_half_unit_rows,rows
+fe_source_bytes_per_packet,smean,83071,140273,140273
+fe_destination_bytes_per_packet,dmean,81636,140273,140273
+fe_packets_per_second,rate,2133,12648,140273

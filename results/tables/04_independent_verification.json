@@ -1,0 +1,13 @@
+{
+  "independent_saved_file_checks": true,
+  "code_cells": 17,
+  "errors": 0,
+  "verified_artifact_hashes": 47,
+  "earlier_files_unchanged": 124,
+  "raw45_overlap_confirmed_zero": true,
+  "role_links_original_labels_verified": true,
+  "formulas_independently_recomputed": true,
+  "baseline_matrix_columns_exactly_preserved": true,
+  "official_test_csv_parsed": false,
+  "figure_review": "All three saved figures visually inspected; formulas and five worked examples visible in the notebook."
+}

@@ -1,0 +1,200 @@
+{
+  "version": "revision_v2",
+  "question": "Do deterministic engineered summaries help matched models?",
+  "feature_sets": [
+    "original42",
+    "total_only43",
+    "total_and_byte44",
+    "total_and_packet44",
+    "all45"
+  ],
+  "classes": [
+    "Analysis",
+    "Backdoor",
+    "DoS",
+    "Exploits",
+    "Fuzzers",
+    "Generic",
+    "Normal",
+    "Reconnaissance",
+    "Shellcode",
+    "Worms"
+  ],
+  "fit_role": "train",
+  "selection_role": "model_selection",
+  "calibration": "Integrity only; never predicted",
+  "official_test": "Hash only in this notebook",
+  "seed": 42,
+  "tuning": "Two configurations per family, same three existing grouped fitting folds, original42 only. Refit preprocessing on each inner-training fold.",
+  "configuration_candidates": {
+    "logistic": [
+      {
+        "C": 0.1
+      },
+      {
+        "C": 1.0
+      }
+    ],
+    "decision_tree": [
+      {
+        "max_depth": 16,
+        "min_samples_leaf": 5
+      },
+      {
+        "max_depth": 24,
+        "min_samples_leaf": 2
+      }
+    ],
+    "lightgbm": [
+      {
+        "num_leaves": 31
+      },
+      {
+        "num_leaves": 63
+      }
+    ]
+  },
+  "exact_candidate_settings": {
+    "logistic": [
+      {
+        "estimator__C": 0.1,
+        "estimator__class_weight": null,
+        "estimator__dual": false,
+        "estimator__fit_intercept": true,
+        "estimator__intercept_scaling": 1,
+        "estimator__l1_ratio": 0.0,
+        "estimator__max_iter": 500,
+        "estimator__n_jobs": null,
+        "estimator__penalty": "deprecated",
+        "estimator__random_state": 42,
+        "estimator__solver": "liblinear",
+        "estimator__tol": 0.0001,
+        "estimator__verbose": 0,
+        "estimator__warm_start": false,
+        "n_jobs": 1,
+        "verbose": 0
+      },
+      {
+        "estimator__C": 1.0,
+        "estimator__class_weight": null,
+        "estimator__dual": false,
+        "estimator__fit_intercept": true,
+        "estimator__intercept_scaling": 1,
+        "estimator__l1_ratio": 0.0,
+        "estimator__max_iter": 500,
+        "estimator__n_jobs": null,
+        "estimator__penalty": "deprecated",
+        "estimator__random_state": 42,
+        "estimator__solver": "liblinear",
+        "estimator__tol": 0.0001,
+        "estimator__verbose": 0,
+        "estimator__warm_start": false,
+        "n_jobs": 1,
+        "verbose": 0
+      }
+    ],
+    "decision_tree": [
+      {
+        "ccp_alpha": 0.0,
+        "class_weight": null,
+        "criterion": "gini",
+        "max_depth": 16,
+        "max_features": null,
+        "max_leaf_nodes": null,
+        "min_impurity_decrease": 0.0,
+        "min_samples_leaf": 5,
+        "min_samples_split": 2,
+        "min_weight_fraction_leaf": 0.0,
+        "monotonic_cst": null,
+        "random_state": 42,
+        "splitter": "best"
+      },
+      {
+        "ccp_alpha": 0.0,
+        "class_weight": null,
+        "criterion": "gini",
+        "max_depth": 24,
+        "max_features": null,
+        "max_leaf_nodes": null,
+        "min_impurity_decrease": 0.0,
+        "min_samples_leaf": 2,
+        "min_samples_split": 2,
+        "min_weight_fraction_leaf": 0.0,
+        "monotonic_cst": null,
+        "random_state": 42,
+        "splitter": "best"
+      }
+    ],
+    "lightgbm": [
+      {
+        "boosting_type": "gbdt",
+        "class_weight": null,
+        "colsample_bytree": 1.0,
+        "importance_type": "split",
+        "learning_rate": 0.1,
+        "max_depth": -1,
+        "min_child_samples": 20,
+        "min_child_weight": 0.001,
+        "min_split_gain": 0.0,
+        "n_estimators": 120,
+        "n_jobs": 2,
+        "num_leaves": 31,
+        "objective": "multiclass",
+        "random_state": 42,
+        "reg_alpha": 0.0,
+        "reg_lambda": 1.0,
+        "subsample": 1.0,
+        "subsample_for_bin": 200000,
+        "subsample_freq": 0,
+        "deterministic": true,
+        "force_col_wise": true,
+        "zero_as_missing": false,
+        "verbosity": -1
+      },
+      {
+        "boosting_type": "gbdt",
+        "class_weight": null,
+        "colsample_bytree": 1.0,
+        "importance_type": "split",
+        "learning_rate": 0.1,
+        "max_depth": -1,
+        "min_child_samples": 20,
+        "min_child_weight": 0.001,
+        "min_split_gain": 0.0,
+        "n_estimators": 120,
+        "n_jobs": 2,
+        "num_leaves": 63,
+        "objective": "multiclass",
+        "random_state": 42,
+        "reg_alpha": 0.0,
+        "reg_lambda": 1.0,
+        "subsample": 1.0,
+        "subsample_for_bin": 200000,
+        "subsample_freq": 0,
+        "deterministic": true,
+        "force_col_wise": true,
+        "zero_as_missing": false,
+        "verbosity": -1
+      }
+    ]
+  },
+  "inner_budget_fits": 18,
+  "final_budget": "One final train-only fit per family/set; reuse a protected existing fit only when exact settings match.",
+  "rationale": "Tune a family on the common original representation, then freeze its settings across five variants. Feature-specific search budget is zero for every set.",
+  "weights": "Unweighted; no sample weights, resampling or SMOTE",
+  "primary_metric": "Fixed-ten-class macro F1",
+  "inner_tie_rule": "Within .001 of best mean macro F1: first/lower-capacity declared configuration. Every fold must converge.",
+  "development_tie_rule": "Within .001 of best: fewer source features, then logistic, decision_tree, lightgbm, then higher score, then declared set order.",
+  "stopping_rule": "120 fixed boosting rounds; no early stopping on model-selection rows. No expanded search after seeing scores.",
+  "prior_exposure": "Ten earlier experiments used the same model-selection role; all further selection is optimistic development evidence.",
+  "fold_assignment_sha256": "ef2eb01cfdeb0b068bf8e7b9bdc820ebcee26f593c66f8673476e89802ccffe7",
+  "original_assignment_sha256": "2c01281b021a7be536bfd0268d53707a3ea74858730fb577db095d618436b168",
+  "source_train_sha256": "bec7dd5ec88dc2a0ccc7a07879d338395ed7421750f675fd0339e07dfe0648fa",
+  "implementation_sha256": "09bd95a022338367fd0546d65ffca507a761a9bf93864a66bdab86eb311f588f",
+  "versions": {
+    "scikit-learn": "1.9.0",
+    "lightgbm": "4.6.0",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1"
+  }
+}

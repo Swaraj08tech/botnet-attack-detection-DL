@@ -1,0 +1,5 @@
+population,purpose
+train,Fit preprocessing/models; grouped internal tuning
+model_selection,Compare candidates; disclose prior exposure
+calibration,Reserved for later probability calibration
+official test,Reserved final evaluation; historical audit only

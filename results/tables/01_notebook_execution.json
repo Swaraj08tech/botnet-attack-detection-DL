@@ -1,0 +1,12 @@
+{
+  "execution": "nbclient using project .venv",
+  "working_directory": ".",
+  "code_cells": 15,
+  "executed_code_cells": 15,
+  "errors": 0,
+  "vscode_ui_execution_verified": false,
+  "verified_working_directories": [
+    ".",
+    "notebooks"
+  ]
+}

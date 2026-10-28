@@ -1,0 +1,4 @@
+population,rows,distinct_original_patterns,actual_errors,minimum_deterministic_vector_errors,observed_accuracy,empirical_vector_accuracy_ceiling
+all selection rows,17534,10258,2883,1627,0.83557659404585372,0.90720885137447249
+clear recorded pattern,14456,10077,1208,0,0.91643608190370784,1
+conflicting recorded pattern,3078,181,1675,1627,0.45581546458739441,0.4714100064977258

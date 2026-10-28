@@ -1,0 +1,13 @@
+,rows,rows,rows,% of role,% of role,% of role,distinct patterns,distinct patterns,distinct patterns
+role,train,model_selection,calibration,train,model_selection,calibration,train,model_selection,calibration
+attack_cat,,,,,,,,,
+Analysis,1600,200,200,1.14,1.14,1.14,1274,159,161
+Backdoor,1397,175,174,1.0,1.0,0.99,1227,153,155
+DoS,9811,1226,1227,6.99,6.99,7.0,3044,382,380
+Exploits,26714,3340,3339,19.04,19.05,19.04,15876,1984,1984
+Fuzzers,14547,1818,1819,10.37,10.37,10.37,12919,1616,1615
+Generic,32000,4000,4000,22.81,22.81,22.81,3342,419,420
+Normal,44800,5600,5600,31.94,31.94,31.94,41512,5188,5190
+Reconnaissance,8393,1049,1049,5.98,5.98,5.98,6033,912,577
+Shellcode,907,113,113,0.65,0.64,0.64,874,108,109
+Worms,104,13,13,0.07,0.07,0.07,102,13,12

@@ -1,0 +1,8 @@
+{
+  "processor": "Intel64 Family 6 Model 183 Stepping 1, GenuineIntel",
+  "physical_cores": 16,
+  "logical_cpus": 24,
+  "memory_bytes": 16869285888,
+  "torch_device_probe": "Unavailable because torch import is blocked",
+  "cost_note": "Wall times vary with background activity; two numerical-library threads are used."
+}

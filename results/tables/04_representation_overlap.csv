@@ -1,0 +1,16 @@
+representation,role_a,role_b,shared_vectors,role_a_rows_with_match,role_b_rows_with_match,new_shared_vs_raw42,purpose
+raw42,train,model_selection,0,0,0,0,full comparison input
+raw42,train,calibration,0,0,0,0,full comparison input
+raw42,model_selection,calibration,0,0,0,0,full comparison input
+raw45,train,model_selection,0,0,0,0,full comparison input
+raw45,train,calibration,0,0,0,0,full comparison input
+raw45,model_selection,calibration,0,0,0,0,full comparison input
+engineered_only_diagnostic,train,model_selection,1623,112258,15174,1623,"lossy diagnostic only, not a model input baseline"
+engineered_only_diagnostic,train,calibration,1602,112115,15137,1602,"lossy diagnostic only, not a model input baseline"
+engineered_only_diagnostic,model_selection,calibration,873,14013,13934,873,"lossy diagnostic only, not a model input baseline"
+tree_augmented,train,model_selection,0,0,0,0,full comparison input
+tree_augmented,train,calibration,0,0,0,0,full comparison input
+tree_augmented,model_selection,calibration,0,0,0,0,full comparison input
+scaled_augmented,train,model_selection,0,0,0,0,full comparison input
+scaled_augmented,train,calibration,0,0,0,0,full comparison input
+scaled_augmented,model_selection,calibration,0,0,0,0,full comparison input

@@ -1,0 +1,10 @@
+arm,seed,epochs run,kept epoch,stopped by early stopping,minutes
+A_full,42,37,32,True,12.006890730063121
+A_full,43,49,44,True,36.85480637947718
+A_full,44,42,37,True,31.08516543706258
+B_no_attention,42,69,64,True,37.905309502283735
+B_no_attention,43,71,66,True,38.23855971097946
+B_no_attention,44,62,57,True,36.30759997367859
+C_shuffle1,42,53,48,True,43.68981428941091
+C_shuffle2,42,54,49,True,44.03042767047882
+D_bilstm,42,36,31,True,11.957538644472757

@@ -1,0 +1,11 @@
+experiment,warning_log,n_iter_by_class,eligible
+logistic_original42,[],"{""Analysis"": 17, ""Backdoor"": 26, ""DoS"": 58, ""Exploits"": 19, ""Fuzzers"": 35, ""Generic"": 22, ""Normal"": 17, ""Reconnaissance"": 21, ""Shellcode"": 22, ""Worms"": 29}",True
+logistic_total_only43,[],"{""Analysis"": 17, ""Backdoor"": 39, ""DoS"": 20, ""Exploits"": 18, ""Fuzzers"": 57, ""Generic"": 20, ""Normal"": 17, ""Reconnaissance"": 22, ""Shellcode"": 17, ""Worms"": 34}",True
+logistic_total_and_byte44,[],"{""Analysis"": 17, ""Backdoor"": 45, ""DoS"": 39, ""Exploits"": 16, ""Fuzzers"": 55, ""Generic"": 19, ""Normal"": 16, ""Reconnaissance"": 36, ""Shellcode"": 25, ""Worms"": 31}",True
+logistic_total_and_packet44,[],"{""Analysis"": 17, ""Backdoor"": 45, ""DoS"": 34, ""Exploits"": 17, ""Fuzzers"": 42, ""Generic"": 26, ""Normal"": 24, ""Reconnaissance"": 46, ""Shellcode"": 25, ""Worms"": 23}",True
+logistic_all45,[],"{""Analysis"": 17, ""Backdoor"": 30, ""DoS"": 20, ""Exploits"": 17, ""Fuzzers"": 36, ""Generic"": 17, ""Normal"": 18, ""Reconnaissance"": 21, ""Shellcode"": 20, ""Worms"": 28}",True
+decision_tree_original42,[],{},True
+decision_tree_total_only43,[],{},True
+decision_tree_total_and_byte44,[],{},True
+decision_tree_total_and_packet44,[],{},True
+decision_tree_all45,[],{},True

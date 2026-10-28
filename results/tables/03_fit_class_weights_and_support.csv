@@ -1,0 +1,13 @@
+target,class,rows,distinct_feature_groups,candidate_balanced_weight,unweighted_baseline_weight
+attack_cat,Analysis,1600,1274,8.7670625,1.0
+attack_cat,Backdoor,1397,1227,10.04101646385111,1.0
+attack_cat,DoS,9811,3044,1.4297523188258077,1.0
+attack_cat,Exploits,26714,15876,0.5250917122108257,1.0
+attack_cat,Fuzzers,14547,12919,0.9642744208427855,1.0
+attack_cat,Generic,32000,3342,0.438353125,1.0
+attack_cat,Normal,44800,41512,0.313109375,1.0
+attack_cat,Reconnaissance,8393,6033,1.6713094245204336,1.0
+attack_cat,Shellcode,907,874,15.465600882028665,1.0
+attack_cat,Worms,104,102,134.8778846153846,1.0
+label,0,44800,41512,1.565546875,1.0
+label,1,95473,39519,0.7346213065474009,1.0

@@ -1,0 +1,43 @@
+column,topic,meaning,type,distinct values in train
+dur,Basic flow information,How long the flow lasted (seconds),float64,74039
+proto,Basic flow information,"Transport protocol (tcp, udp, ...)",str,133
+service,Basic flow information,"Application service (http, dns, ftp, ...); '-' means not identified",str,13
+state,Basic flow information,"Connection state at the end (FIN, CON, INT, ...)",str,9
+spkts,Size of the flow,Packets sent src -> dst,int64,480
+dpkts,Size of the flow,Packets sent dst -> src,int64,443
+sbytes,Size of the flow,Bytes sent src -> dst,int64,7214
+dbytes,Size of the flow,Bytes sent dst -> src,int64,6660
+rate,Speed and load,Packets per second,float64,76991
+sttl,Packet header values,Time-to-live value src -> dst,int64,11
+dttl,Packet header values,Time-to-live value dst -> src,int64,6
+sload,Speed and load,Bits per second src -> dst,float64,80885
+dload,Speed and load,Bits per second dst -> src,float64,77474
+sloss,Speed and load,Packets lost or resent by src,int64,409
+dloss,Speed and load,Packets lost or resent by dst,int64,370
+sinpkt,Timing,Average time between packets from src (ms),float64,76161
+dinpkt,Timing,Average time between packets from dst (ms),float64,74245
+sjit,Timing,"Variation of packet timing from src (jitter, ms)",float64,77532
+djit,Timing,"Variation of packet timing from dst (jitter, ms)",float64,76831
+swin,Packet header values,TCP window size of src,int64,13
+stcpb,Packet header values,TCP starting sequence number of src,int64,75265
+dtcpb,Packet header values,TCP starting sequence number of dst,int64,75089
+dwin,Packet header values,TCP window size of dst,int64,7
+tcprtt,Timing,TCP setup round-trip time (synack + ackdat),float64,43319
+synack,Timing,Time between SYN and SYN-ACK,float64,40142
+ackdat,Timing,Time between SYN-ACK and ACK,float64,37708
+smean,Size of the flow,Average packet size src -> dst (bytes),int64,1357
+dmean,Size of the flow,Average packet size dst -> src (bytes),int64,1328
+trans_depth,Web and FTP content,Position of the flow inside an HTTP request/response chain,int64,11
+response_body_len,Web and FTP content,Size of the HTTP response body,int64,2386
+ct_srv_src,Counts over recent flows,Recent flows with the same service and source address,int64,52
+ct_state_ttl,Counts over recent flows,Count based on state and time-to-live ranges,int64,5
+ct_dst_ltm,Counts over recent flows,Recent flows with the same destination address,int64,50
+ct_src_dport_ltm,Counts over recent flows,Recent flows with the same source address and destination port,int64,47
+ct_dst_sport_ltm,Counts over recent flows,Recent flows with the same destination address and source port,int64,32
+ct_dst_src_ltm,Counts over recent flows,Recent flows with the same source and destination address,int64,54
+is_ftp_login,Web and FTP content,1 if an FTP login with user and password happened,int64,4
+ct_ftp_cmd,Web and FTP content,Number of FTP commands in the session,int64,4
+ct_flw_http_mthd,Web and FTP content,Number of HTTP GET/POST methods in the flow,int64,11
+ct_src_ltm,Counts over recent flows,Recent flows with the same source address,int64,50
+ct_srv_dst,Counts over recent flows,Recent flows with the same service and destination address,int64,52
+is_sm_ips_ports,Packet header values,1 if source and destination address and port are the same,int64,2

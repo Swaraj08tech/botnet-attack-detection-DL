@@ -1,0 +1,4 @@
+role,rows,all finite,same values as earlier version,tree input identical,scaled input identical
+train,140273,True,True,True,True
+model_selection,17534,True,True,True,True
+calibration,17534,True,True,True,True

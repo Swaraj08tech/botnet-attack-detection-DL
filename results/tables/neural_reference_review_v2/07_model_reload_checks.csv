@@ -1,0 +1,7 @@
+feature_set,seed,model_reloaded,predictions_equal,class_and_column_order,rows_equal,metrics_and_matrices_equal,epochs
+original42,42,True,True,True,True,True,30
+original42,43,True,True,True,True,True,30
+original42,44,True,True,True,True,True,30
+total_and_byte44,42,True,True,True,True,True,30
+total_and_byte44,43,True,True,True,True,True,30
+total_and_byte44,44,True,True,True,True,True,30

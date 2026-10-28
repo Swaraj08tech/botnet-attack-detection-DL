@@ -1,0 +1,10 @@
+representation,role_a,role_b,shared_vectors,role_a_rows_with_match,role_b_rows_with_match
+tree_all45,train,model_selection,0,0,0
+tree_all45,train,calibration,0,0,0
+tree_all45,model_selection,calibration,0,0,0
+scaled_all45,train,model_selection,0,0,0
+scaled_all45,train,calibration,0,0,0
+scaled_all45,model_selection,calibration,0,0,0
+engineered_three_alone_diagnostic,train,model_selection,1623,112258,15174
+engineered_three_alone_diagnostic,train,calibration,1602,112115,15137
+engineered_three_alone_diagnostic,model_selection,calibration,873,14013,13934

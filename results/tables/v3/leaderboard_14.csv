@@ -1,0 +1,2 @@
+notebook,model,feature set,runs,macro F1 mean,macro F1 std,accuracy,attack recall,false-positive rate,attack avg precision,Worms correct (of 13),parameters,train minutes per run
+14,Proposed model,total_and_byte44,3,0.6025109227341763,0.010904594046720298,0.7971750123569445,0.9910619518462656,0.15595238095238095,0.9957394207251863,7.666666666666667,147784,2.2877311203214856

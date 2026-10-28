@@ -1,0 +1,7 @@
+representation,role_a,role_b,shared_vectors,role_a_rows_with_match,role_b_rows_with_match
+tree,train,model_selection,0,0,0
+tree,train,calibration,0,0,0
+tree,model_selection,calibration,0,0,0
+scaled,train,model_selection,0,0,0
+scaled,train,calibration,0,0,0
+scaled,model_selection,calibration,0,0,0

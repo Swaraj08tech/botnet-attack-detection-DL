@@ -1,0 +1,29 @@
+{
+  "initialized_on": "2026-10-11",
+  "reference_paper": {
+    "original_path": "research paper source/Deep Learning Project Reference Paper.pdf",
+    "path": "docs/reference_paper/Deep Learning Project Reference Paper.pdf",
+    "bytes": 5705220,
+    "sha256_before_move": "C8AB004844A42FE4617A25ADE60BA5D97E36B2429860738A47AD6571C822C1FE",
+    "sha256_after_move": "C8AB004844A42FE4617A25ADE60BA5D97E36B2429860738A47AD6571C822C1FE",
+    "integrity_verified": true
+  },
+  "datasets": {
+    "official_training_csv": "data/raw/UNSW_NB15_training-set.csv",
+    "official_testing_csv": "data/raw/UNSW_NB15_testing-set.csv",
+    "status": "User-supplied CSVs copied from Downloads; content integrity verified. Official provenance and schema not yet independently verified.",
+    "files": [
+      {
+        "path": "data/raw/UNSW_NB15_training-set.csv",
+        "bytes": 32293018,
+        "sha256": "BEC7DD5EC88DC2A0CCC7A07879D338395ED7421750F675FD0339E07DFE0648FA"
+      },
+      {
+        "path": "data/raw/UNSW_NB15_testing-set.csv",
+        "bytes": 15380800,
+        "sha256": "734FE6642EDF758F7C94D7D9149426B49D202FE8E7BF0BEF47392489C3C0A559"
+      }
+    ],
+    "placed_on": "2026-10-11"
+  }
+}

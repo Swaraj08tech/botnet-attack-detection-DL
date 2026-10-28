@@ -1,0 +1,5 @@
+Dataset,Target,Majority Class,Minority Class,Majority Count,Minority Count,Imbalance Ratio
+train,label,1,0,119341,56000,2.131089285714286
+train,attack_cat,Normal,Worms,56000,130,430.7692307692308
+test,label,1,0,45332,37000,1.2251891891891893
+test,attack_cat,Normal,Worms,37000,44,840.9090909090909

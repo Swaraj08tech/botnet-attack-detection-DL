@@ -1,0 +1,5 @@
+dataset,target,minimum_recorded_row_errors,maximum_empirical_accuracy
+train,label,321,0.99816928157133811
+train,attack_cat,16213,0.90753446142088845
+test,label,6,0.99992712432590003
+test,attack_cat,5268,0.93601515814021274

@@ -1,0 +1,13 @@
+{
+  "code_cells": 11,
+  "errors": 0,
+  "candidates": 5,
+  "verified_input_files": 45,
+  "verified_artifact_hashes": 95,
+  "earlier_files_unchanged": 182,
+  "exact_raw_overlap_independently_checked": true,
+  "categorical_groups_preserved": true,
+  "inner_original_groups_disjoint": true,
+  "winner": null,
+  "official_test_parsed": false
+}

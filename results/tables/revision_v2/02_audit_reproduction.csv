@@ -1,0 +1,15 @@
+dataset,metric,previous,reproduced,matches
+train,Rows,175341,175341,True
+train,Columns,45,45,True
+train,Missing Values,0,0,True
+train,Infinite Values,0,0,True
+train,Duplicate Rows,0,0,True
+train,Duplicate Features (excluding id and targets),74301,74301,True
+train,Duplicate Labeled Records (excluding id),67601,67601,True
+test,Rows,82332,82332,True
+test,Columns,45,45,True
+test,Missing Values,0,0,True
+test,Infinite Values,0,0,True
+test,Duplicate Rows,0,0,True
+test,Duplicate Features (excluding id and targets),28386,28386,True
+test,Duplicate Labeled Records (excluding id),26387,26387,True

@@ -1,0 +1,115 @@
+# Kubernetes manifests for the application (namespace, database, backend, frontend).
+# Before applying:
+#   kubectl create namespace attack-detection
+#   kubectl -n attack-detection create secret generic app-secrets \
+#     --from-literal=POSTGRES_PASSWORD=... --from-literal=JWT_SECRET=... --from-literal=ADMIN_PASSWORD=...
+#   Put the model bundle on the volume "model-bundle" (see docs/DEPLOYMENT.md), then: kubectl apply -f deployment/kubernetes/
+apiVersion: v1
+kind: ConfigMap
+metadata: {name: app-config, namespace: attack-detection}
+data:
+  ENVIRONMENT: production
+  ADMIN_EMAIL: admin@example.com
+  OLLAMA_URL: http://ollama:11434
+  LLM_MODEL: qwen2.5:7b
+  BUNDLE_DIR: /bundle
+  DATA_DIR: /data
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata: {name: db-data, namespace: attack-detection}
+spec: {accessModes: [ReadWriteOnce], resources: {requests: {storage: 5Gi}}}
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata: {name: model-bundle, namespace: attack-detection}
+spec: {accessModes: [ReadWriteOnce], resources: {requests: {storage: 1Gi}}}
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata: {name: app-data, namespace: attack-detection}       # staged uploads + generated PDF reports
+spec: {accessModes: [ReadWriteOnce], resources: {requests: {storage: 2Gi}}}
+---
+apiVersion: apps/v1
+kind: StatefulSet
+metadata: {name: db, namespace: attack-detection}
+spec:
+  serviceName: db
+  replicas: 1
+  selector: {matchLabels: {app: db}}
+  template:
+    metadata: {labels: {app: db}}
+    spec:
+      containers:
+        - name: postgres
+          image: postgres:16-alpine
+          env:
+            - {name: POSTGRES_DB, value: attack_detection}
+            - {name: POSTGRES_USER, value: attack}
+            - name: POSTGRES_PASSWORD
+              valueFrom: {secretKeyRef: {name: app-secrets, key: POSTGRES_PASSWORD}}
+            - {name: PGDATA, value: /var/lib/postgresql/data/pgdata}
+          ports: [{containerPort: 5432}]
+          volumeMounts: [{name: data, mountPath: /var/lib/postgresql/data}]
+          readinessProbe: {exec: {command: [pg_isready, -U, attack, -d, attack_detection]}, periodSeconds: 10}
+      volumes: [{name: data, persistentVolumeClaim: {claimName: db-data}}]
+---
+apiVersion: v1
+kind: Service
+metadata: {name: db, namespace: attack-detection}
+spec: {selector: {app: db}, ports: [{port: 5432}]}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata: {name: backend, namespace: attack-detection}
+spec:
+  replicas: 1                     # one replica: analysis and report jobs run inside the API process
+  selector: {matchLabels: {app: backend}}
+  template:
+    metadata: {labels: {app: backend}}
+    spec:
+      securityContext: {runAsNonRoot: true, runAsUser: 10001}
+      containers:
+        - name: api
+          image: ghcr.io/swaraj08tech/botnet-attack-detection-backend:latest
+          envFrom: [{configMapRef: {name: app-config}}]
+          env:
+            - name: POSTGRES_PASSWORD
+              valueFrom: {secretKeyRef: {name: app-secrets, key: POSTGRES_PASSWORD}}
+            - {name: DATABASE_URL, value: 'postgresql+psycopg://attack:$(POSTGRES_PASSWORD)@db:5432/attack_detection'}
+            - name: JWT_SECRET
+              valueFrom: {secretKeyRef: {name: app-secrets, key: JWT_SECRET}}
+            - name: ADMIN_PASSWORD
+              valueFrom: {secretKeyRef: {name: app-secrets, key: ADMIN_PASSWORD}}
+          ports: [{containerPort: 8000}]
+          volumeMounts: [{name: bundle, mountPath: /bundle, readOnly: true}, {name: app-data, mountPath: /data}]
+          readinessProbe: {httpGet: {path: /api/health, port: 8000}, initialDelaySeconds: 20, periodSeconds: 15}
+          livenessProbe: {httpGet: {path: /api/health, port: 8000}, initialDelaySeconds: 60, periodSeconds: 30}
+          resources: {requests: {cpu: 250m, memory: 512Mi}, limits: {memory: 2Gi}}
+      volumes: [{name: bundle, persistentVolumeClaim: {claimName: model-bundle}}, {name: app-data, persistentVolumeClaim: {claimName: app-data}}]
+---
+apiVersion: v1
+kind: Service
+metadata: {name: backend, namespace: attack-detection}
+spec: {selector: {app: backend}, ports: [{port: 8000}]}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata: {name: frontend, namespace: attack-detection}
+spec:
+  replicas: 2
+  selector: {matchLabels: {app: frontend}}
+  template:
+    metadata: {labels: {app: frontend}}
+    spec:
+      containers:
+        - name: web
+          image: ghcr.io/swaraj08tech/botnet-attack-detection-frontend:latest
+          ports: [{containerPort: 8080}]
+          readinessProbe: {httpGet: {path: /, port: 8080}, periodSeconds: 15}
+          resources: {requests: {cpu: 50m, memory: 64Mi}, limits: {memory: 256Mi}}
+---
+apiVersion: v1
+kind: Service
+metadata: {name: frontend, namespace: attack-detection}
+spec: {type: LoadBalancer, selector: {app: frontend}, ports: [{port: 80, targetPort: 8080}]}

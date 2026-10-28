@@ -1,0 +1,4 @@
+comparison,seed,difference,95% low,95% high,verdict
+cross-attention vs self-attention,42,0.01261145749621595,0.0023402794065209565,0.022942801971959803,first clearly better
+cross-attention vs self-attention,43,0.008865004050005787,-0.002939119287573669,0.021599508233928484,could be chance
+cross-attention vs self-attention,44,-0.014380656016583226,-0.026641199011055196,-0.0011343413333309222,second clearly better

@@ -1,0 +1,9 @@
+feature_set,actual_class,correct,out_of,predicted_as_Exploits
+original42,Analysis,22,200,156
+original42,Backdoor,17,175,151
+original42,DoS,60,1226,1122
+original42,Worms,0,13,11
+total_and_byte44,Analysis,21,200,123
+total_and_byte44,Backdoor,15,175,115
+total_and_byte44,DoS,271,1226,916
+total_and_byte44,Worms,0,13,11

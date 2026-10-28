@@ -1,0 +1,11 @@
+,rows,MLP correct,LightGBM correct,difference (MLP - LightGBM)
+Analysis,200,21,30,-9
+Backdoor,175,15,26,-11
+DoS,1226,271,86,185
+Exploits,3340,2942,3192,-250
+Fuzzers,1818,1304,1391,-87
+Generic,4000,3911,3923,-12
+Normal,5600,4961,5127,-166
+Reconnaissance,1049,763,779,-16
+Shellcode,113,71,88,-17
+Worms,13,0,9,-9

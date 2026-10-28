@@ -1,0 +1,5 @@
+population,rows,distinct_test_patterns
+full_test,82332,53946
+overlaps_official_train,8541,1302
+nonoverlap_official_train,73791,52644
+overlaps_fit_train,6783,1042

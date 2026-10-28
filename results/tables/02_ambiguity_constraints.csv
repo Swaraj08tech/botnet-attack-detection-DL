@@ -1,0 +1,5 @@
+dataset,target,empirical_minimum_errors_for_identical_vector_prediction,empirical_minimum_error_pct
+train,label,321,0.18307184286618644
+train,attack_cat,16213,9.246553857911156
+test,label,6,0.007287567409998542
+test,attack_cat,5268,6.39848418597872

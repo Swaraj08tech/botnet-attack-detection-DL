@@ -1,0 +1,6 @@
+group,columns,availability
+Flow totals and load,"dur, spkts, dpkts, sbytes, dbytes, rate, sload, dload, sloss, dloss, smean, dmean",Recorded in supplied CSV; extractor semantics/timing partly unresolved
+Recorded timing summaries,"sinpkt, dinpkt, sjit, djit, tcprtt, synack, ackdat",Recorded in supplied CSV; extractor semantics/timing partly unresolved
+"Protocol, state and header values","proto, service, state, sttl, dttl, swin, dwin, stcpb, dtcpb, is_sm_ips_ports",Recorded in supplied CSV; extractor semantics/timing partly unresolved
+Service-specific counters,"trans_depth, response_body_len, is_ftp_login, ct_ftp_cmd, ct_flw_http_mthd",Recorded in supplied CSV; extractor semantics/timing partly unresolved
+Contextual connection counts,"ct_srv_src, ct_state_ttl, ct_dst_ltm, ct_src_dport_ltm, ct_dst_sport_ltm, ct_dst_src_ltm, ct_src_ltm, ct_srv_dst",Recorded in supplied CSV; extractor semantics/timing partly unresolved

@@ -1,0 +1,6 @@
+column,observation,decision
+is_ftp_login and ct_ftp_cmd,identical in every training row: True; different in 8 test rows,Keep both. They are copies in training but not in testing.
+is_ftp_login,"should be 0/1 but has values [0, 1, 2, 4] in training","Keep as recorded; do not ""fix"" values without documentation."
+service = '-',53.7% of training rows,"Treat as its own category (""service not identified""), not as missing."
+ct_* counters,counted over the previous ~100 connections,Usable for offline analysis of completed flows; we cannot verify they only use past traffic.
+id,rows are stored sorted by class (Notebook 01),Never an input; not a time order.

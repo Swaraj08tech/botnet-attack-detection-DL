@@ -1,0 +1,26 @@
+{
+  "checked_utc": "2026-10-12T18:10:34.956590+00:00",
+  "python": "D:\\projects\\Botnet attack detection\\.venv\\Scripts\\python.exe",
+  "python_version": "3.11.9",
+  "purpose": "Synthetic runtime smoke test; no project records/targets accessed",
+  "torch_distribution": "2.14.0",
+  "security_policy_changed": false,
+  "status": "passed",
+  "torch_version": "2.14.0+cpu",
+  "device": "CPU",
+  "cuda_available": false,
+  "input_shape": [
+    2,
+    1,
+    195
+  ],
+  "output_shape": [
+    2,
+    10
+  ],
+  "dtype": "torch.float64",
+  "forward_backward": true,
+  "optimizer_step": true,
+  "finite": true,
+  "checkpoint_reload_equal": true
+}

@@ -1,0 +1,16 @@
+line-length = 160
+target-version = "py311"
+
+[lint]
+select = ["E", "F", "W", "I", "B", "S"]
+ignore = [
+  "E701", "E702",   # short one-line statements are used deliberately in a few places
+  "S101",           # assert is fine in tests
+  "B008",           # FastAPI's Depends()/File() defaults are the intended pattern
+  "S105", "S106",   # test passwords in test fixtures
+  "S311",           # random numbers are not used for security
+]
+
+[lint.per-file-ignores]
+"tests/*" = ["S", "E501"]
+"app/core/pdf_report.py" = ["E501"]   # report layout: long table definitions read better on one line

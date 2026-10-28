@@ -1,0 +1,7 @@
+feature_set,seed,dimensions,column_order,class_order,row_links,reloaded_predictions_equal,recomputed_metrics_equal
+original42,42,True,True,True,True,True,True
+original42,43,True,True,True,True,True,True
+original42,44,True,True,True,True,True,True
+total_and_byte44,42,True,True,True,True,True,True
+total_and_byte44,43,True,True,True,True,True,True
+total_and_byte44,44,True,True,True,True,True,True

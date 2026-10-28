@@ -1,0 +1,4 @@
+role_a,role_b,shared_original_patterns
+train,model_selection,0
+train,calibration,0
+model_selection,calibration,0

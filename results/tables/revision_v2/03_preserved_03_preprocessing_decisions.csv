@@ -1,0 +1,6 @@
+item,columns,decision,evidence
+categorical,"proto, service, state","OneHotEncoder(handle_unknown=ignore), fit train only",Nominal strings; unknown categories possible
+tree numerical,"dur, spkts, dpkts, sbytes, dbytes, rate, sttl, dttl, sload, dload, sloss, dloss, sinpkt, dinpkt, sjit, djit, swin, stcpb, dtcpb, dwin, tcprtt, synack, ackdat, smean, dmean, trans_depth, response_body_len, ct_srv_src, ct_state_ttl, ct_dst_ltm, ct_src_dport_ltm, ct_dst_sport_ltm, ct_dst_src_ltm, is_ftp_login, ct_ftp_cmd, ct_flw_http_mthd, ct_src_ltm, ct_srv_dst, is_sm_ips_ports",passthrough,Preserve raw numerical baseline
+linear/neural log,"dur, spkts, dpkts, sbytes, dbytes, sload, sloss, dloss, sinpkt, dinpkt, sjit, djit, response_body_len",log1p then RobustScaler,Prespecified nonnegative magnitude/timing fields with train |skew| > 5
+linear/neural remaining,"rate, sttl, dttl, dload, swin, stcpb, dtcpb, dwin, tcprtt, synack, ackdat, smean, dmean, trans_depth, ct_srv_src, ct_state_ttl, ct_dst_ltm, ct_src_dport_ltm, ct_dst_sport_ltm, ct_dst_src_ltm, is_ftp_login, ct_ftp_cmd, ct_flw_http_mthd, ct_src_ltm, ct_srv_dst, is_sm_ips_ports",RobustScaler,Wide train ranges; retain zeros/outliers
+rows/labels,all,preserve,Notebook 02 duplicate/ambiguity policy

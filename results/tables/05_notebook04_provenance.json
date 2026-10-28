@@ -1,0 +1,8 @@
+{
+  "actual_sha256": "0d377c804ae22cfefed561197d9ebd65cd48928f15700fd45b3dc10eab98beeb",
+  "recorded_execution_sha256": "253d3d8e7b402898af0b5a4415946f72d7a952047cc60b8fce027f31692327b0",
+  "file_hash_matches_old_execution_record": false,
+  "all_code_and_markdown_match_manifest_verified_builder": true,
+  "saved_error_outputs": 0,
+  "explanation": "Non-source notebook content differs from the old execution record; all code/Markdown and every manifest artifact verify. Earlier files were not modified."
+}

@@ -1,0 +1,9 @@
+attack_cat,conflicting pattern,rows,share correct
+Analysis,False,54,0.42592592592592593
+Analysis,True,146,0.04794520547945205
+Backdoor,False,42,0.5476190476190477
+Backdoor,True,133,0.022556390977443608
+DoS,False,250,0.332
+DoS,True,976,0.0030737704918032786
+Exploits,False,2004,0.9341317365269461
+Exploits,True,1336,0.9880239520958084

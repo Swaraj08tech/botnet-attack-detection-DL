@@ -1,0 +1,3 @@
+Dataset,Rows,Columns,Candidate Features,Numerical Features,Categorical Features,Boolean Features,Missing Values,Infinite Values,Duplicate Rows,Duplicate Features (excluding id and targets),Duplicate Labeled Records (excluding id),Number of Classes,Binary Classes
+train,175341,45,42,39,3,0,0,0,0,74301,67601,10,2
+test,82332,45,42,39,3,0,0,0,0,28386,26387,10,2

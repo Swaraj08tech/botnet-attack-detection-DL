@@ -1,0 +1,3 @@
+file,missing cells,infinite values,negative numbers,columns with one value only,fully identical rows (incl. id)
+training,0,0,0,0,0
+testing,0,0,0,0,0

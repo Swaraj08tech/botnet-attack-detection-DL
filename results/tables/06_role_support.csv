@@ -1,0 +1,4 @@
+role,rows,original_patterns,use
+train,140273,80848,Fit only
+model_selection,17534,10258,Evaluate and compare
+calibration,17534,9934,Integrity only; no model predictions

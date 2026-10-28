@@ -1,0 +1,11 @@
+class,techniques,confidence,rationale,names
+DoS,"T1498, T1499",high,Attempts to make a service unavailable: network and endpoint denial of service,Network Denial of Service; Endpoint Denial of Service
+Reconnaissance,"T1595, T1046",high,Probing and scanning to gather information about hosts and services,Active Scanning; Network Service Discovery
+Exploits,"T1190, T1210",high,Exploiting known vulnerabilities in exposed applications and remote services,Exploit Public-Facing Application; Exploitation of Remote Services
+Fuzzers,"T1595.002, T1499.004",medium,"Sending random input to find or trigger flaws (vulnerability scanning, crash via exploitation)",Vulnerability Scanning; Application or System Exploitation
+Worms,"T1210, T1570",medium,Self-replicating code that exploits remote services and spreads between hosts,Exploitation of Remote Services; Lateral Tool Transfer
+Shellcode,"T1203, T1055",medium,Small machine-code payloads delivered through exploitation and injected into processes,Exploitation for Client Execution; Process Injection
+Backdoor,"T1205, T1571, T1219",medium,"Covert remote access that bypasses normal authentication (signalling, unusual ports, remote access tools)",Traffic Signaling; Non-Standard Port; Remote Access Tools
+Analysis,"T1046, T1595",low,"Port scans, spam and HTML-file penetration: closest to service discovery and scanning",Network Service Discovery; Active Scanning
+Generic,T1600,low,"Attacks against block ciphers; ATT&CK has no direct match, closest is Weaken Encryption",Weaken Encryption
+Normal,,-,No attack,

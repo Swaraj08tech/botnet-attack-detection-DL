@@ -1,0 +1,4 @@
+idea,existing column,spearman,decision
+packets per second = (spkts + dpkts) / dur,rate,0.9968796184500835,not kept: already measured by rate
+source bytes per packet = sbytes / spkts,smean,0.9993186782615271,not kept: already measured by smean
+destination bytes per packet = dbytes / dpkts,dmean,0.9999311922666038,not kept: already measured by dmean

@@ -1,0 +1,5 @@
+candidate,comparator,valid_rows,valid_groups,exact_equal_rows,close_rows,close_fraction,atol,rtol,median_absolute_difference,spearman
+fe_packets_per_second,rate,138136,80465,0,0,0.0,1e-08,1e-06,339.4434056340808,0.9968160038066589
+fe_source_bytes_per_packet,smean,140273,80848,83071,140273,1.0,0.5,1e-06,0.0,0.9993186782615271
+fe_destination_bytes_per_packet,dmean,73041,69503,14404,73041,1.0,0.5,1e-06,0.25,0.9995648862688926
+diagnostic: (spkts+dpkts-1)/dur,rate,138136,80465,227,137787,0.9974735043725025,1e-08,1e-06,8.699053034888493e-05,0.999999999939491

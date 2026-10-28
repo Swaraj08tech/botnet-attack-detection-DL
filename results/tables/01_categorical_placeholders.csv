@@ -1,0 +1,9 @@
+Dataset,Column,Blank String Count,Dash Placeholder Count,Edge Whitespace Count
+train,proto,0,0,0
+train,service,0,94168,0
+train,state,0,0,0
+train,attack_cat,0,0,0
+test,proto,0,0,0
+test,service,0,47153,0
+test,state,0,0,0
+test,attack_cat,0,0,0

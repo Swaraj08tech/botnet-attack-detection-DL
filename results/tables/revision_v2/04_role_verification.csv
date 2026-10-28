@@ -1,0 +1,4 @@
+role,rows,columns,finite,formulas_match_prior,reload_exact
+train,140273,3,True,True,True
+model_selection,17534,3,True,True,True
+calibration,17534,3,True,True,True

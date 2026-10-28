@@ -1,0 +1,16 @@
+{
+  "code_cells": 11,
+  "errors": 0,
+  "models_reloaded_and_verified": 10,
+  "prediction_rows_per_model": 17534,
+  "fixed_ten_class_metrics_recomputed": true,
+  "all_confusion_matrices_verified": true,
+  "probability_order_and_binary_derivation_verified": true,
+  "decision_recomputed": true,
+  "all_feature_differences_and_class_tradeoffs_recomputed": true,
+  "verified_artifacts": 93,
+  "earlier_files_unchanged": 283,
+  "calibration_predictions": 0,
+  "official_test_evaluations": 0,
+  "raw_and_assignment_integrity": true
+}

@@ -1,0 +1,4 @@
+comparison,seed,difference,95% low,95% high,verdict
+50/50 blend vs LightGBM (sqrt),42,-0.018869282225333572,-0.03585535154483692,-0.005801233909785303,second clearly better
+50/50 blend vs LightGBM (sqrt),43,-0.022361671099260128,-0.03692408363073699,-0.009409448672758638,second clearly better
+50/50 blend vs LightGBM (sqrt),44,-0.024406420722255517,-0.04214701888051963,-0.009722604116235503,second clearly better

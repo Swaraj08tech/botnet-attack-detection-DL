@@ -1,0 +1,3 @@
+,rows,repeated rows (ignoring id),repeated rows (ignoring id and both targets),share of rows that repeat an earlier row %
+training,175341,67601,74301,42.37514329221346
+testing,82332,26387,28386,34.47748141670311

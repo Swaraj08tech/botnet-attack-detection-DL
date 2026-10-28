@@ -1,0 +1,49 @@
+{
+  "python": "3.11.9",
+  "executable": "d:\\projects\\Botnet attack detection\\.venv\\Scripts\\python.exe",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "threads": 2,
+  "precision": "float64; saved CSR inputs retained",
+  "versions": {
+    "numpy": "2.4.6",
+    "pandas": "3.0.3",
+    "scipy": "1.17.1",
+    "scikit-learn": "1.9.0",
+    "joblib": "1.5.3",
+    "lightgbm": "4.6.0",
+    "nbclient": "0.11.0",
+    "nbformat": "5.11.1"
+  },
+  "threadpools": [
+    {
+      "user_api": "blas",
+      "internal_api": "openblas",
+      "num_threads": 24,
+      "prefix": "libscipy_openblas",
+      "filepath": "C:\\Users\\Swaraj\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\numpy.libs\\libscipy_openblas64_-63c857e738469261263c764a36be9436.dll",
+      "version": "0.3.31.188.0",
+      "threading_layer": "pthreads",
+      "architecture": "Haswell"
+    },
+    {
+      "user_api": "blas",
+      "internal_api": "openblas",
+      "num_threads": 24,
+      "prefix": "libscipy_openblas",
+      "filepath": "C:\\Users\\Swaraj\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\scipy.libs\\libscipy_openblas-64eda39e79589aedb16f58e5547eb599.dll",
+      "version": "0.3.30",
+      "threading_layer": "pthreads",
+      "architecture": "Haswell"
+    },
+    {
+      "user_api": "openmp",
+      "internal_api": "openmp",
+      "num_threads": 24,
+      "prefix": "vcomp",
+      "filepath": "C:\\Users\\Swaraj\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\sklearn\\.libs\\vcomp140.dll",
+      "version": null
+    }
+  ],
+  "backend": "scikit-learn MLPClassifier, CPU",
+  "torch_limitation": "Installed PyTorch import failed: WinError 4551, Application Control blocked torch.dll or a dependency. No security-policy change attempted."
+}

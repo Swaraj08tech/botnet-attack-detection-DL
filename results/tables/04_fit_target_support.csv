@@ -1,0 +1,13 @@
+target,target_class,rows,distinct_feature_groups
+label,0,44800,41512
+label,1,95473,39519
+attack_cat,Analysis,1600,1274
+attack_cat,Backdoor,1397,1227
+attack_cat,DoS,9811,3044
+attack_cat,Exploits,26714,15876
+attack_cat,Fuzzers,14547,12919
+attack_cat,Generic,32000,3342
+attack_cat,Normal,44800,41512
+attack_cat,Reconnaissance,8393,6033
+attack_cat,Shellcode,907,874
+attack_cat,Worms,104,102

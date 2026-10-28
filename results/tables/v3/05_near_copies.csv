@@ -1,0 +1,18 @@
+feature A,feature B,spearman,involves engineered
+is_ftp_login,ct_ftp_cmd,1.0,False
+trans_depth,ct_flw_http_mthd,0.9996154531530133,False
+tcprtt,synack,0.9967946640758149,False
+tcprtt,ackdat,0.9936645195761238,False
+swin,dwin,0.990463558661906,False
+dpkts,dbytes,0.9897224577450117,False
+synack,ackdat,0.9843834301192952,False
+dmean,fe_byte_balance,-0.9753488675578551,True
+fe_byte_balance,fe_packet_balance,0.9734006261051392,True
+sbytes,fe_total_bytes,0.9646896629320303,True
+dbytes,dmean,0.962715145163391,False
+dload,dmean,0.9623358266256979,False
+rate,sload,0.9605386106435544,False
+dmean,fe_packet_balance,-0.9593690582865186,True
+dttl,dinpkt,0.9591985732866213,False
+dpkts,dloss,0.9557081391882292,False
+sloss,dloss,0.9549261650355917,False

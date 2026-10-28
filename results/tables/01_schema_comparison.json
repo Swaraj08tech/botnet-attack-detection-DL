@@ -1,0 +1,10 @@
+{
+  "missing_columns_in_test": [],
+  "extra_columns_in_test": [],
+  "same_column_order": true,
+  "dtype_mismatches": {},
+  "candidate_feature_counts": [
+    42,
+    42
+  ]
+}

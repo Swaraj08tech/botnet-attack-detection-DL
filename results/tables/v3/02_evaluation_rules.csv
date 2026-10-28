@@ -1,0 +1,8 @@
+what,rule,why
+Main score,Macro F1 over all 10 classes,"Every class counts equally, so rare attacks matter as much as Normal"
+Per class,"Precision, recall, F1 and support for each class",Shows which attacks are missed
+Mistakes,Confusion matrix (counts and row %),Shows which classes get mixed up
+Attack vs Normal,"Attack recall, false-positive rate, precision; average precision from 1 - P(Normal)",How well attacks are caught and how many false alarms
+Secondary,Accuracy and weighted F1,"Reported, but never used to choose a model"
+Data roles,Fit on train; compare on model_selection; calibration kept aside; test used once at the end,Keeps the final score honest
+Test reporting,"Full test file, plus ""seen in training"" vs ""new"" rows",Shows how much the score depends on memorised patterns

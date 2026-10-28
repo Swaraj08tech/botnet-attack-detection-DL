@@ -1,0 +1,7 @@
+feature_set,role,rows,encoded_columns,dtype,finite,verified_parent
+original42,train,140273,193,float64,True,True
+original42,model_selection,17534,193,float64,True,True
+original42,calibration,17534,193,float64,True,True
+total_and_byte44,train,140273,195,float64,True,True
+total_and_byte44,model_selection,17534,195,float64,True,True
+total_and_byte44,calibration,17534,195,float64,True,True

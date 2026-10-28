@@ -1,0 +1,6 @@
+RQ,question,where,answer
+RQ1,Do duplicates inflate scores?,Notebook 09,Hardly (+0.004 macro F1); label conflicts dominate; deduplication biases scores downward (-0.013)
+RQ2,How close to the best possible?,"Notebooks 02, 19",test accuracy 0.728 vs strict limit 0.936; macro F1 0.518 vs memoriser reference 0.765
+RQ3,Does the proposed network beat strong baselines?,"Notebooks 10-15, 19",see the test table above and the ablation in Notebook 15
+RQ4,Do conformal sets keep coverage and express ambiguity?,"Notebooks 17, 19",yes on model_selection (0.928); on the shifted test file only 0.802 (target 0.90)
+RQ5,Can report claims be verified automatically?,Notebook 18,yes: with retrieval 99% of claims and 97-100% of ATT&CK IDs pass; without sources the LLM invents IDs; unsupported items are removed automatically

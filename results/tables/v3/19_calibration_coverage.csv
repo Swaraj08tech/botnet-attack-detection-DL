@@ -1,0 +1,2 @@
+ECE before calibration,ECE after calibration,set coverage (target 0.90),average set size,single-class sets,coverage on seen flows,coverage on new flows
+0.10372974185073673,0.10368255507866607,0.8024947772433562,1.3755162026915415,0.7668464266627799,0.6766186629200328,0.8170644116491171

@@ -1,0 +1,5 @@
+target,status,vectors,train_rows,test_rows
+binary,conflicting,279,795,526
+binary,consistent,1023,9484,8015
+category,conflicting,548,2655,4977
+category,consistent,754,7624,3564

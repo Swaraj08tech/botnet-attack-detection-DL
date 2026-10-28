@@ -1,0 +1,69 @@
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+
+# Python environments and generated caches
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+*.egg-info/
+build/
+dist/
+.ipynb_checkpoints/
+
+# Local datasets; keep files locally and record provenance in docs
+/data/raw/**
+/data/interim/**
+/data/processed/**
+/data/knowledge_base/**
+
+# Trained artifacts and retrieval indexes
+/models/**
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.faiss
+*.index
+
+# Generated runtime files
+*.log
+*.tmp
+*.temp
+*.bak
+.cache/
+cache/
+tmp/
+temp/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Keep reference paper, research documentation and curated results trackable
+
+# Large local folders and third-party documents (kept locally, not published)
+/snapshots/
+/docs/reference_paper/*.pdf
+/research paper source/
+
+# Serving bundle (built locally from models/; published as a release asset)
+/serving/bundle/
+
+# Local backend database
+/backend/local.db
+
+# Local tool settings
+/.claude/
+
+# Zipped serving bundle (attach to the GitHub release instead)
+/serving/*.zip
+
+# Local application data (staged uploads, PDF reports)
+/backend/data/

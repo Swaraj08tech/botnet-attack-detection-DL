@@ -1,0 +1,70 @@
+{
+  "groups": {
+    "Flow totals and load": [
+      "dur",
+      "spkts",
+      "dpkts",
+      "sbytes",
+      "dbytes",
+      "rate",
+      "sload",
+      "dload",
+      "sloss",
+      "dloss",
+      "smean",
+      "dmean"
+    ],
+    "Recorded timing summaries": [
+      "sinpkt",
+      "dinpkt",
+      "sjit",
+      "djit",
+      "tcprtt",
+      "synack",
+      "ackdat"
+    ],
+    "Protocol, state and header values": [
+      "proto",
+      "service",
+      "state",
+      "sttl",
+      "dttl",
+      "swin",
+      "dwin",
+      "stcpb",
+      "dtcpb",
+      "is_sm_ips_ports"
+    ],
+    "Service-specific counters": [
+      "trans_depth",
+      "response_body_len",
+      "is_ftp_login",
+      "ct_ftp_cmd",
+      "ct_flw_http_mthd"
+    ],
+    "Contextual connection counts": [
+      "ct_srv_src",
+      "ct_state_ttl",
+      "ct_dst_ltm",
+      "ct_src_dport_ltm",
+      "ct_dst_sport_ltm",
+      "ct_dst_src_ltm",
+      "ct_src_ltm",
+      "ct_srv_dst"
+    ]
+  },
+  "meaning": "Auditable tabular grouping; not validated streams or event order",
+  "engineered": [
+    "fe_total_bytes",
+    "fe_byte_balance",
+    "fe_packet_balance"
+  ],
+  "unavailable": [
+    "query names",
+    "query types",
+    "DNS responses",
+    "flow timestamps",
+    "endpoint identifiers",
+    "verified botnet/C2 labels"
+  ]
+}

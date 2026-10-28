@@ -1,0 +1,9 @@
+candidate,dropped columns,importance-weighted training,macro F1 (model_selection),IW macro F1 (estimate for new traffic),seconds
+all columns,0,False,0.6662202585864259,0.7043227887254937,6
+all columns + importance weights,0,True,0.6596076976643979,0.7050310161384745,6
+without TTL,3,False,0.6502895824247735,0.6928611445616262,6
+without TTL + importance weights,3,True,0.6502689813146366,0.6925329323786896,6
+without counters,7,False,0.6106652857208871,0.6408199869141814,5
+without counters + importance weights,7,True,0.5842064398006637,0.6184965982335351,6
+without TTL and counters,10,False,0.6021034098071381,0.6346939210581869,5
+without TTL and counters + importance weights,10,True,0.5818336172533894,0.6113358869150368,5

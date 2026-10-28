@@ -1,0 +1,7 @@
+Feature,Direction,Rows,Different original feature patterns,Share of fitting rows (%)
+fe_byte_balance,More forward,103410,45873,73.72
+fe_byte_balance,Zero balance,27,16,0.02
+fe_byte_balance,More back,36836,34959,26.26
+fe_packet_balance,More forward,102725,44824,73.23
+fe_packet_balance,Zero balance,15341,14321,10.94
+fe_packet_balance,More back,22207,21703,15.83

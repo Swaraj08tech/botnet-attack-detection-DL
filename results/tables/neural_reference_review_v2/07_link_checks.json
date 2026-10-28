@@ -1,0 +1,27 @@
+[
+  {
+    "label": "local reference paper",
+    "target": "../docs/reference_paper/Deep%20Learning%20Project%20Reference%20Paper.pdf",
+    "exists": true
+  },
+  {
+    "label": "architecture handoff",
+    "target": "../docs/revision_v2/architecture_handoff.md",
+    "exists": true
+  },
+  {
+    "label": "the preserved result tables",
+    "target": "../results/tables/neural_reference_v1/",
+    "exists": true
+  },
+  {
+    "label": "the runtime investigation and next steps",
+    "target": "../docs/neural_reference_review_v2/07_runtime_readiness.md",
+    "exists": true
+  },
+  {
+    "label": "the verification guide",
+    "target": "../docs/neural_reference_review_v2/07_verification_guide.md",
+    "exists": true
+  }
+]

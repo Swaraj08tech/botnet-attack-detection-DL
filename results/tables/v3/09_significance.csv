@@ -1,0 +1,3 @@
+comparison,mean difference,lowest fold of method,highest fold of C,every fold higher than every C fold
+A random split vs C,0.003803501808888332,0.6134836511996682,0.6195628490589306,False
+"B drop copies, then random vs C",-0.013073810825023457,0.5870045108471154,0.6195628490589306,False

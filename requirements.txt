@@ -1,0 +1,11 @@
+# Initial data-understanding and exploratory-analysis dependencies only.
+# Versions will be locked after the research environment is validated.
+numpy
+pandas
+matplotlib
+seaborn
+scikit-learn
+jupyterlab
+ipykernel
+nbformat
+nbclient

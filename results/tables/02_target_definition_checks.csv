@@ -1,0 +1,3 @@
+dataset,binary_classes,attack_categories,normal_binary_inconsistencies,literal_botnet_rows
+train,"[0, 1]","['Analysis', 'Backdoor', 'DoS', 'Exploits', 'Fuzzers', 'Generic', 'Normal', 'Reconnaissance', 'Shellcode', 'Worms']",0,0
+test,"[0, 1]","['Analysis', 'Backdoor', 'DoS', 'Exploits', 'Fuzzers', 'Generic', 'Normal', 'Reconnaissance', 'Shellcode', 'Worms']",0,0

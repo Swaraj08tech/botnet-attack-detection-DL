@@ -1,0 +1,89 @@
+{
+  "version": "neural_reference_v1",
+  "sets": [
+    "original42",
+    "total_and_byte44"
+  ],
+  "classes": [
+    "Analysis",
+    "Backdoor",
+    "DoS",
+    "Exploits",
+    "Fuzzers",
+    "Generic",
+    "Normal",
+    "Reconnaissance",
+    "Shellcode",
+    "Worms"
+  ],
+  "configurations": [
+    {
+      "hidden_layer_sizes": [
+        64,
+        32
+      ],
+      "alpha": 0.0001
+    },
+    {
+      "hidden_layer_sizes": [
+        128,
+        64
+      ],
+      "alpha": 0.01
+    }
+  ],
+  "settings": {
+    "activation": "relu",
+    "alpha": 0.0001,
+    "batch_size": 512,
+    "beta_1": 0.9,
+    "beta_2": 0.999,
+    "early_stopping": false,
+    "epsilon": 1e-08,
+    "hidden_layer_sizes": [
+      64,
+      32
+    ],
+    "learning_rate": "constant",
+    "learning_rate_init": 0.001,
+    "max_fun": 15000,
+    "max_iter": 30,
+    "momentum": 0.9,
+    "n_iter_no_change": 31,
+    "nesterovs_momentum": true,
+    "power_t": 0.5,
+    "random_state": 42,
+    "shuffle": true,
+    "solver": "adam",
+    "tol": 0.0,
+    "validation_fraction": 0.1,
+    "verbose": false,
+    "warm_start": false
+  },
+  "epochs": 30,
+  "search": "Two jointly declared capacity/L2 settings x three existing grouped fitting folds, original42 only; clone/refit inner preprocessing.",
+  "search_fits": 6,
+  "search_seed": 42,
+  "final_seeds": [
+    42,
+    43,
+    44
+  ],
+  "final_fits": 6,
+  "rule": "Highest mean fixed-ten-class macro F1; within .001 prefer first/smaller configuration. Same chosen settings for both feature sets.",
+  "feature_choice": "Mean of three final MLP seeds; within .001 prefer original42. Do not choose a best seed.",
+  "reference_seed": 42,
+  "stopping": "Exactly 30 full epochs; no early stopping, convergence-based stop or later epoch change.",
+  "weights": "Unweighted; no sample weights/resampling; weighting deferred",
+  "optimizer": "Adam; learning rate .001, batch 512, beta1 .9, beta2 .999, epsilon 1e-8",
+  "regularization": "L2 alpha is sklearn penalty coefficient divided by batch sample count; no dropout",
+  "fairness": "Same fitting rows/classes/scaled inputs for MLP sets; existing tree representation for exact LightGBM controls. MLP has six inner fits, matching Notebook06 LightGBM search count; families have different fixed training algorithms/budgets.",
+  "reserved": "Calibration targets never loaded. Official-test records never opened.",
+  "exposure": "Model-selection already used in Notebook06; comparisons are optimistic development evidence.",
+  "deviations": [
+    "Use installed scikit-learn MLP instead of blocked PyTorch; the requested MLP experiment is fully implemented."
+  ],
+  "assignment_sha256": "2c01281b021a7be536bfd0268d53707a3ea74858730fb577db095d618436b168",
+  "inner_folds_sha256": "ef2eb01cfdeb0b068bf8e7b9bdc820ebcee26f593c66f8673476e89802ccffe7",
+  "implementation_sha256": "138945ebba4b5c3441090bdea7d8da4ded2e4c3aa24ea09f0edbe70b9c7ee25b"
+}

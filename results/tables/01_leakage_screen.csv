@@ -1,0 +1,41 @@
+Dataset,Column,Unique Values,Deterministic Label Mapping,Rows in Pure Groups %,Interpretation
+train,service,13,False,0.0998055218117839,Association alone does not prove leakage; investigate source and availability
+train,state,9,False,0.00855475901243862,Association alone does not prove leakage; investigate source and availability
+train,sttl,11,False,22.665548844822375,Association alone does not prove leakage; investigate source and availability
+train,dttl,6,False,22.504149058121033,Association alone does not prove leakage; investigate source and availability
+train,swin,13,False,0.006273489942454988,Association alone does not prove leakage; investigate source and availability
+train,dwin,7,False,0.0028515863374795397,Association alone does not prove leakage; investigate source and availability
+train,trans_depth,11,False,0.007414124477446804,Association alone does not prove leakage; investigate source and availability
+train,ct_srv_src,52,False,2.6257406995511605,Association alone does not prove leakage; investigate source and availability
+train,ct_state_ttl,5,False,0.0,Association alone does not prove leakage; investigate source and availability
+train,ct_dst_ltm,50,False,3.61809274499404,Association alone does not prove leakage; investigate source and availability
+train,ct_src_dport_ltm,47,False,5.070690825306118,Association alone does not prove leakage; investigate source and availability
+train,ct_dst_sport_ltm,32,False,20.653469525096813,Association alone does not prove leakage; investigate source and availability
+train,ct_dst_src_ltm,54,False,2.3599728528980672,Association alone does not prove leakage; investigate source and availability
+train,is_ftp_login,4,False,0.009125076279934528,Association alone does not prove leakage; investigate source and availability
+train,ct_ftp_cmd,4,False,0.009125076279934528,Association alone does not prove leakage; investigate source and availability
+train,ct_flw_http_mthd,11,False,0.042203477794697186,Association alone does not prove leakage; investigate source and availability
+train,ct_src_ltm,50,False,1.8980158662263817,Association alone does not prove leakage; investigate source and availability
+train,ct_srv_dst,52,False,1.7440302040024867,Association alone does not prove leakage; investigate source and availability
+train,is_sm_ips_ports,2,False,1.5752162928236977,Association alone does not prove leakage; investigate source and availability
+train,attack_cat,10,True,100.0,Target-derived: exclude from predictors
+test,service,13,False,0.6230870135548754,Association alone does not prove leakage; investigate source and availability
+test,state,7,False,0.002429189136666181,Association alone does not prove leakage; investigate source and availability
+test,sttl,11,False,20.479279016664236,Association alone does not prove leakage; investigate source and availability
+test,dttl,8,False,20.356604965262594,Association alone does not prove leakage; investigate source and availability
+test,swin,11,False,0.010931351114997814,Association alone does not prove leakage; investigate source and availability
+test,dwin,14,False,0.015789729388330176,Association alone does not prove leakage; investigate source and availability
+test,trans_depth,8,False,0.04129621532332507,Association alone does not prove leakage; investigate source and availability
+test,ct_srv_src,57,False,3.3656415488509936,Association alone does not prove leakage; investigate source and availability
+test,ct_state_ttl,7,False,0.035223242481659624,Association alone does not prove leakage; investigate source and availability
+test,ct_dst_ltm,50,False,2.0356604965262597,Association alone does not prove leakage; investigate source and availability
+test,ct_src_dport_ltm,50,False,8.103774959918379,Association alone does not prove leakage; investigate source and availability
+test,ct_dst_sport_ltm,33,False,14.938298595928678,Association alone does not prove leakage; investigate source and availability
+test,ct_dst_src_ltm,57,False,1.7903123937229752,Association alone does not prove leakage; investigate source and availability
+test,is_ftp_login,3,False,0.004858378273332362,Association alone does not prove leakage; investigate source and availability
+test,ct_ftp_cmd,3,False,0.0,Association alone does not prove leakage; investigate source and availability
+test,ct_flw_http_mthd,8,False,0.17490161783996502,Association alone does not prove leakage; investigate source and availability
+test,ct_src_ltm,50,False,1.987076713792936,Association alone does not prove leakage; investigate source and availability
+test,ct_srv_dst,57,False,4.337317203517466,Association alone does not prove leakage; investigate source and availability
+test,is_sm_ips_ports,2,False,1.1125686245931108,Association alone does not prove leakage; investigate source and availability
+test,attack_cat,10,True,100.0,Target-derived: exclude from predictors

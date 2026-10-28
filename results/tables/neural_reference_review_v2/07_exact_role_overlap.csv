@@ -1,0 +1,7 @@
+feature_set,role_a,role_b,shared_vectors,role_a_rows_with_match,role_b_rows_with_match
+original42,train,model_selection,0,0,0
+original42,train,calibration,0,0,0
+original42,model_selection,calibration,0,0,0
+total_and_byte44,train,model_selection,0,0,0
+total_and_byte44,train,calibration,0,0,0
+total_and_byte44,model_selection,calibration,0,0,0

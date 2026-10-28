@@ -1,0 +1,6 @@
+what we looked for,present?
+"A class called ""Botnet""",False
+"DNS query details (query, domain, qtype, entropy columns)",False
+Timestamps (stime / ltime columns),False
+"IP addresses or port numbers (srcip, dstip, sport, dsport columns)",False
+"A service value ""dns""",True

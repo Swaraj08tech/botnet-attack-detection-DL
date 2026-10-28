@@ -1,0 +1,13 @@
+set,version,role,shape,all finite,identical to earlier inputs
+original42,tree,train,"(140273, 193)",True,True
+original42,tree,model_selection,"(17534, 193)",True,True
+original42,tree,calibration,"(17534, 193)",True,True
+total_and_byte44,tree,train,"(140273, 195)",True,True
+total_and_byte44,tree,model_selection,"(17534, 195)",True,True
+total_and_byte44,tree,calibration,"(17534, 195)",True,True
+original42,scaled,train,"(140273, 193)",True,True
+original42,scaled,model_selection,"(17534, 193)",True,True
+original42,scaled,calibration,"(17534, 193)",True,True
+total_and_byte44,scaled,train,"(140273, 195)",True,True
+total_and_byte44,scaled,model_selection,"(17534, 195)",True,True
+total_and_byte44,scaled,calibration,"(17534, 195)",True,True

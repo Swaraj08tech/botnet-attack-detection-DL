@@ -1,0 +1,19 @@
+dataset,metric,prior,reproduced,match
+train,Rows,175341,175341,True
+train,Columns,45,45,True
+train,Missing Values,0,0,True
+train,Infinite Values,0,0,True
+train,Duplicate Rows,0,0,True
+train,Duplicate Features (excluding id and targets),74301,74301,True
+train,Duplicate Labeled Records (excluding id),67601,67601,True
+train,Feature Groups With Binary Conflict,229,229,True
+train,Feature Groups With Attack-category Conflict,1772,1772,True
+test,Rows,82332,82332,True
+test,Columns,45,45,True
+test,Missing Values,0,0,True
+test,Infinite Values,0,0,True
+test,Duplicate Rows,0,0,True
+test,Duplicate Features (excluding id and targets),28386,28386,True
+test,Duplicate Labeled Records (excluding id),26387,26387,True
+test,Feature Groups With Binary Conflict,6,6,True
+test,Feature Groups With Attack-category Conflict,575,575,True

@@ -1,0 +1,7 @@
+feature,formula,units,decision,reason
+fe_total_bytes,sbytes + dbytes,bytes,Retain for a model comparison,Volume as an explicit sum
+fe_byte_balance,(sbytes - dbytes) / (sbytes + dbytes),unitless,Retain for a model comparison,Bounded direction ratio may help a linear representation
+fe_packet_balance,(spkts - dpkts) / (spkts + dpkts),unitless,Retain for a model comparison,Packet direction may differ despite related byte balance
+fe_packets_per_second,(spkts + dpkts) / dur,packets/second if dur is seconds,Reject from this small candidate set,Existing rate field; extractor formula unresolved
+fe_source_bytes_per_packet,sbytes / spkts,bytes/packet,Reject from this small candidate set,Near smean up to rounding
+fe_destination_bytes_per_packet,dbytes / dpkts,bytes/packet,Reject from this small candidate set,Near dmean up to rounding

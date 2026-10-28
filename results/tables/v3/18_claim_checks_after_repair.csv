@@ -1,0 +1,234 @@
+part,text,supported,reason,alert,mode
+claim,"The alert has a predicted class of Analysis with a calibrated probability of 1.00, indicating a high confidence level.",True,supported,8270,
+claim,"The prediction set includes only the class 'Analysis', suggesting this is the primary focus of the alert.",True,supported,8270,
+claim,"The column 'ct_flw_http_mthd' with a value of 30 supports the Analysis prediction, contributing +0.369 to the SHAP value.",True,supported,8270,
+claim,"The column 'response_body_len' with a value of 156 also supports the Analysis prediction, adding +0.132 to the SHAP value.",True,supported,8270,
+technique,T1007,True,supported,8270,
+technique,T1595,True,supported,8270,
+action,Isolate affected systems and networks including perimeter and internal network containment to prevent further spread of potential threats.,False,invalid or missing citation,8270,
+action,"Change system admin passwords, rotate private keys, and revoke privileged access where compromise is suspected to mitigate potential compromise.",False,invalid or missing citation,8270,
+claim,"The network alert indicates a high probability of Analysis activity, with a 98% confidence level, based on the presence of specific network traffic patterns [E1].",True,supported,8086,
+claim,"The prediction set includes Analysis with 90% coverage, suggesting that the alert is part of a broader set of similar alerts [E2].",True,supported,8086,
+claim,"The column ct_flw_http_mthd = 16, which supports Analysis (SHAP +0.332), is the most influential factor in the prediction [E3].",True,supported,8086,
+claim,"The column response_body_len = 132, which supports Analysis (SHAP +0.211), is the second most influential factor in the prediction [E4].",True,supported,8086,
+claim,"The column sttl = 62, which supports Analysis (SHAP +0.108), is the third most influential factor in the prediction [E5].",True,supported,8086,
+technique,T1007,True,supported,8086,
+technique,T1595,True,supported,8086,
+action,"Isolate affected systems and networks, including perimeter and internal network containment, to prevent further spread of the potential threat [S4].",False,claim words not found in cited sources,8086,
+action,"Change system admin passwords, rotate private keys and service/application account secrets where compromise is suspected [S4].",False,claim words not found in cited sources,8086,
+claim,"The network alert indicates a high probability of Analysis, with a calibrated probability of 0.68, and is part of a 90% coverage prediction set.",True,supported,9821,RAG
+claim,The column sbytes = 828 supports Analysis (SHAP +0.241).,True,supported,9821,RAG
+claim,The column dload = 10501.60449 supports Analysis (SHAP +0.144).,True,supported,9821,RAG
+claim,The column stcpb = 2738155303 supports Analysis (SHAP +0.095).,True,supported,9821,RAG
+technique,T1007,True,supported,9821,RAG
+technique,T1595,True,supported,9821,RAG
+action,"Isolate affected systems and networks, including perimeter and internal network containment, and host-based/endpoint containment.",True,supported,9821,RAG
+action,"Change system admin passwords, rotate private keys and service/application account secrets where compromise is suspected, and revoke privileged access.",True,supported,9821,RAG
+claim,The predicted class is Backdoor with a calibrated probability of 0.90.,True,supported,4751,RAG
+claim,The prediction set confirms the Backdoor prediction with 90% coverage.,True,supported,4751,RAG
+claim,The column ct_src_ltm = 11 supports the Backdoor prediction with a SHAP value of +0.247.,True,supported,4751,RAG
+claim,The column proto = mtp supports the Backdoor prediction with a SHAP value of +0.116.,True,supported,4751,RAG
+technique,T1571,True,supported,4751,RAG
+action,Isolate affected systems and networks to prevent further spread of the backdoor.,True,supported,4751,RAG
+claim,"The predicted class is Backdoor with a calibrated probability of 0.68, indicating a high likelihood of malicious activity.",True,supported,4764,RAG
+claim,"The prediction set (90% coverage) confirms the presence of a Backdoor, aligning with the initial prediction.",True,supported,4764,RAG
+claim,"Column dbytes = 268 supports the Backdoor prediction, contributing +0.244 to the SHAP value.",True,supported,4764,RAG
+claim,"Column proto = tcp also supports the Backdoor prediction, adding +0.134 to the SHAP value.",True,supported,4764,RAG
+technique,T1571,True,supported,4764,RAG
+action,Isolate affected systems and networks to prevent further spread of the backdoor.,True,supported,4764,RAG
+action,Change system admin passwords and rotate private keys to mitigate potential compromise.,True,supported,4764,RAG
+claim,"The alert predicts a backdoor with a 44% probability, based on the SHAP values of the columns involved.",True,supported,4761,RAG
+claim,"The prediction set includes Analysis and Backdoor, indicating a high likelihood of malicious activity.",True,supported,4761,RAG
+claim,"Column proto = unas supports the prediction of a backdoor, with a SHAP value of +0.194.",True,supported,4761,RAG
+claim,"Column ct_src_ltm = 12 also supports the backdoor prediction, with a SHAP value of +0.115.",True,supported,4761,RAG
+technique,T1571,True,supported,4761,RAG
+action,Isolate affected systems and networks to prevent further spread of the potential backdoor.,True,supported,4761,RAG
+action,Monitor for signs of threat actor response and gather additional evidence.,True,supported,4761,RAG
+claim,The alert predicts a DoS attack with a 31% probability.,True,supported,10812,RAG
+claim,"The prediction set includes DoS, Analysis, Backdoor, Exploits, and Reconnaissance.",True,supported,10812,RAG
+claim,The column ct_srv_dst supports DoS with a SHAP value of +0.059.,True,supported,10812,RAG
+claim,The column proto supports DoS with a SHAP value of +0.056.,True,supported,10812,RAG
+claim,The column sttl supports DoS with a SHAP value of +0.055.,True,supported,10812,RAG
+technique,T1499,True,supported,10812,RAG
+action,Isolate affected systems and networks to prevent further damage.,True,supported,10812,RAG
+action,Change system admin passwords and rotate private keys to mitigate potential compromise.,True,supported,10812,RAG
+claim,"The alert predicts a DoS attack with a calibrated probability of 0.37, indicating a moderate risk level.",True,supported,9358,RAG
+claim,"The prediction set includes DoS, Analysis, Backdoor, and Reconnaissance activities, suggesting a complex threat scenario.",True,supported,9358,RAG
+claim,"The column 'proto' supports DoS with a SHAP value of +0.086, indicating that protocol type is a significant factor in the prediction.",True,supported,9358,RAG
+claim,"The column 'smean' supports DoS with a SHAP value of +0.061, suggesting that mean packet size is a contributing factor.",True,supported,9358,RAG
+claim,"The column 'sbytes' supports DoS with a SHAP value of +0.050, indicating that byte size is a relevant factor in the prediction.",True,supported,9358,RAG
+technique,T1499,True,supported,9358,RAG
+action,Isolate affected systems and networks to prevent further damage and reduce the impact of the incident.,True,supported,9358,RAG
+action,Change system admin passwords and rotate private keys to mitigate potential compromise.,True,supported,9358,RAG
+claim,The alert predicts a DoS attack with a 33% probability.,True,supported,14031,
+claim,"The prediction set includes DoS, Analysis, Backdoor, and Exploits.",True,supported,14031,
+claim,The column sbytes = 200 supports DoS with a SHAP value of +0.126.,True,supported,14031,
+claim,The column smean = 100 supports DoS with a SHAP value of +0.096.,True,supported,14031,
+technique,T1499,True,supported,14031,
+action,Monitor for signs of threat actor response to containment activities.,True,supported,14031,
+action,Isolate affected systems and networks including perimeter and internal network containment.,True,supported,14031,
+claim,"The network alert indicates a high probability of an exploit being used, with a 95% calibrated probability.",True,supported,11586,
+claim,The prediction set for this alert is Exploits with 90% coverage.,True,supported,11586,
+claim,The column sttl = 62 supports the prediction of an exploit with a SHAP value of +0.302.,True,supported,11586,
+claim,The column dbytes = 69191 supports the prediction of an exploit with a SHAP value of +0.189.,True,supported,11586,
+claim,The column dttl = 252 supports the prediction of an exploit with a SHAP value of +0.105.,True,supported,11586,
+technique,T1588.005,True,supported,11586,
+action,"Isolate affected systems and networks, including perimeter and internal network containment.",True,supported,11586,
+action,"Change system admin passwords, rotate private keys, and revoke privileged access where compromise is suspected.",True,supported,11586,
+claim,"The network alert indicates a high probability of an exploit being attempted, with a 69% likelihood, based on the SHAP values of specific columns.",True,supported,9772,RAG
+claim,"The prediction set includes DoS, Exploits, and Worms, with Exploits being the most likely outcome.",True,supported,9772,RAG
+claim,"The column dttl = 60 supports the prediction of Exploits, with a SHAP value of +0.155.",True,supported,9772,RAG
+claim,"The column sttl = 254 also supports the prediction of Exploits, with a SHAP value of +0.148.",True,supported,9772,RAG
+claim,"The column smean = 1014 supports the prediction of Exploits, with a SHAP value of +0.085.",True,supported,9772,RAG
+technique,T1588.005,True,supported,9772,RAG
+action,Monitor for signs of threat actor response to containment activities and report updated findings to CISA.,True,supported,9772,RAG
+action,"Isolate affected systems and networks, including perimeter and internal network containment, and close specific ports and mail servers.",True,supported,9772,RAG
+claim,"The alert predicted class is Exploits with a calibrated probability of 0.94, indicating a high likelihood of an exploit attempt.",True,supported,10441,
+claim,"The prediction set for this alert is Exploits, with the network traffic features sttl, dbytes, and dttl being the most significant in supporting this prediction.",False,column sttl not in cited evidence,10441,
+claim,"The column sttl = 62 supports Exploits, contributing +0.406 to the prediction score.",True,supported,10441,
+claim,"The column dbytes = 305916 supports Exploits, contributing +0.133 to the prediction score.",True,supported,10441,
+technique,T1588.005,True,supported,10441,
+action,Isolate affected systems and networks including perimeter and internal network containment to prevent further damage.,False,invalid or missing citation,10441,
+action,"Change system admin passwords, rotate private keys, and revoke privileged access where compromise is suspected to mitigate potential compromise.",False,invalid or missing citation,10441,
+claim,The alert predicts a Fuzzer attack with a calibrated probability of 0.77.,True,supported,12209,RAG
+claim,"The prediction set includes only Fuzzers, with 90% coverage.",True,supported,12209,RAG
+claim,"The column sbytes = 804 supports Fuzzers, contributing +0.226 to the prediction.",True,supported,12209,RAG
+claim,"The column sttl = 254 supports Fuzzers, contributing +0.148 to the prediction.",True,supported,12209,RAG
+claim,"The column dmean = 56 supports Fuzzers, contributing +0.103 to the prediction.",True,supported,12209,RAG
+technique,T1595.002,True,supported,12209,RAG
+action,Monitor for signs of threat actor response to containment activities and report updated findings to CISA.,True,supported,12209,RAG
+action,"Isolate affected systems and networks, including perimeter and internal network containment.",True,supported,12209,RAG
+claim,"The alert predicts a Fuzzer attack with a calibrated probability of 1.00, indicating a high likelihood of this type of threat.",True,supported,10399,
+claim,"The prediction set for this alert includes only Fuzzers, suggesting a focused threat vector.",True,supported,10399,
+claim,"The column 'sbytes' with a SHAP value of +0.226 supports the prediction of Fuzzers, indicating that the size of bytes sent is a significant factor.",True,supported,10399,
+claim,"The column 'dur' with a SHAP value of +0.110 also supports the prediction of Fuzzers, showing that the duration of the connection is a contributing factor.",True,supported,10399,
+technique,T1595.002,True,supported,10399,
+action,Isolate affected systems and networks including perimeter and internal network containment to prevent further damage and reduce the impact of the incident.,False,invalid or missing citation,10399,
+action,"Change system admin passwords, rotate private keys, and revoke privileged access where compromise is suspected to mitigate potential compromise.",False,invalid or missing citation,10399,
+claim,The alert predicts a fuzzer attack with a calibrated probability of 0.64.,True,supported,6581,
+claim,"The prediction set includes only fuzzer attacks, with a 90% coverage probability.",True,supported,6581,
+claim,"The column 'sbytes' supports the prediction, with a SHAP value of +0.128.",True,supported,6581,
+claim,"The column 'synack' also supports the prediction, with a SHAP value of +0.113.",True,supported,6581,
+claim,"The column 'sttl' supports the prediction, with a SHAP value of +0.090.",True,supported,6581,
+technique,T1595.002,True,supported,6581,
+action,Isolate affected systems and networks including perimeter and internal network containment to prevent further damage.,False,invalid or missing citation,6581,
+action,"Change system admin passwords, rotate private keys, and revoke privileged access where compromise is suspected to mitigate potential compromise.",False,invalid or missing citation,6581,
+claim,"The alert predicted a Generic class with a calibrated probability of 1.00, indicating a high likelihood of a security issue.",True,supported,16839,
+claim,"The prediction set for this alert is solely Generic, suggesting a focused threat related to this class.",True,supported,16839,
+claim,"The column sbytes = 114 supports the Generic class, contributing +0.224 to the prediction score.",True,supported,16839,
+claim,"The column service = dns supports the Generic class, adding +0.134 to the prediction score.",True,supported,16839,
+technique,T1601.002,True,supported,16839,
+technique,T1600,True,supported,16839,
+action,Isolate affected systems and networks including perimeter and internal network containment to prevent further damage and reduce the immediate impact of the incident.,False,invalid or missing citation,16839,
+action,"Change system admin passwords, rotate private keys, and revoke privileged access where compromise is suspected.",False,invalid or missing citation,16839,
+claim,"The alert predicted a Generic event with a calibrated probability of 1.00, indicating a high likelihood of this classification.",True,supported,15328,RAG
+claim,"The prediction set for this alert is solely Generic, suggesting a high confidence in this classification.",True,supported,15328,RAG
+claim,"The column 'service = dns' supports the Generic classification with a SHAP value of +0.284, indicating its importance in the prediction.",True,supported,15328,RAG
+claim,"The column 'dbytes = 0' supports the Generic classification with a SHAP value of +0.177, highlighting its significance in the prediction.",True,supported,15328,RAG
+claim,"The column 'sbytes = 114' supports the Generic classification with a SHAP value of +0.118, further emphasizing its importance in the prediction.",True,supported,15328,RAG
+technique,T1601.002,True,supported,15328,RAG
+technique,T1600.001,True,supported,15328,RAG
+action,Monitor for signs of threat actor response to containment activities and report updated findings to CISA.,True,supported,15328,RAG
+action,"Isolate affected systems and networks, including perimeter and internal network containment, to prevent further damage.",True,supported,15328,RAG
+claim,"The alert was classified as Generic with a calibrated probability of 1.00, indicating a high likelihood of a security issue.",True,supported,11988,RAG
+claim,"The prediction set includes only Generic events, suggesting a consistent pattern in the data.",True,supported,11988,RAG
+claim,"The column 'service = dns' supports the prediction, indicating that DNS activity is a key factor.",True,supported,11988,RAG
+claim,"The column 'sbytes = 114' also supports the prediction, highlighting a specific byte count as a significant feature.",True,supported,11988,RAG
+claim,"The column 'sttl = 254' further reinforces the prediction, pointing to a specific TTL value as a critical feature.",True,supported,11988,RAG
+technique,T1600.001,True,supported,11988,RAG
+action,Isolate affected systems and networks to prevent further damage.,True,supported,11988,RAG
+action,Change system admin passwords and rotate private keys to mitigate potential compromise.,True,supported,11988,RAG
+claim,"The alert has a predicted class of Reconnaissance with a calibrated probability of 1.00, indicating a very high likelihood of this activity.",True,supported,6392,RAG
+claim,"The prediction set includes only Reconnaissance, suggesting a high confidence in this classification.",True,supported,6392,RAG
+claim,"The column sbytes = 564 supports Reconnaissance, with a SHAP value of +0.422, indicating its importance in the prediction.",True,supported,6392,RAG
+claim,"The column dbytes = 354 also supports Reconnaissance, with a SHAP value of +0.196, further reinforcing the prediction.",True,supported,6392,RAG
+claim,"The column sttl = 254 supports Reconnaissance, with a SHAP value of +0.146, contributing to the overall prediction.",True,supported,6392,RAG
+technique,T1595,True,supported,6392,RAG
+action,Monitor for signs of threat actor response to containment activities and report updated findings to CISA.,True,supported,6392,RAG
+action,"Isolate affected systems and networks, including perimeter and internal network containment, to prevent further damage.",True,supported,6392,RAG
+claim,The alert was classified with a 100% probability of being a Reconnaissance activity.,True,supported,13268,
+claim,The prediction set confirms that the alert falls within the Reconnaissance category.,True,supported,13268,
+claim,The column 'sbytes' with a SHAP value of +0.378 is the most significant factor supporting the Reconnaissance prediction.,True,supported,13268,
+claim,The column 'sttl' with a SHAP value of +0.122 is the second most important factor in predicting Reconnaissance.,True,supported,13268,
+claim,The column 'dbytes' with a SHAP value of +0.114 is the third most important factor in predicting Reconnaissance.,True,supported,13268,
+technique,T1595,True,supported,13268,
+action,Isolate affected systems and networks including perimeter and internal network containment to prevent further damage.,False,invalid or missing citation,13268,
+action,"Change system admin passwords, rotate private keys, and revoke privileged access where compromise is suspected to mitigate potential compromise.",False,invalid or missing citation,13268,
+claim,The alert was classified with a 100% probability of being a reconnaissance activity.,True,supported,5714,RAG
+claim,"The prediction set includes only reconnaissance activities, indicating a high confidence in this classification.",True,supported,5714,RAG
+claim,"The column sbytes, which measures 168 bytes, supports the prediction of reconnaissance with a SHAP value of +0.419.",True,supported,5714,RAG
+claim,"The column smean, measuring 84 bytes, also supports the prediction of reconnaissance with a SHAP value of +0.185.",True,supported,5714,RAG
+claim,"The column dbytes, measuring 0 bytes, supports the prediction of reconnaissance with a SHAP value of +0.109.",True,supported,5714,RAG
+technique,T1595,True,supported,5714,RAG
+action,Monitor for signs of threat actor response to containment activities and report updated findings to CISA.,True,supported,5714,RAG
+action,"Isolate affected systems and networks, including perimeter and internal network containment.",True,supported,5714,RAG
+claim,"The alert predicts Shellcode with a calibrated probability of 0.95, indicating a high likelihood of malicious activity.",True,supported,6810,RAG
+claim,"The prediction set confirms that the activity is within the expected range of Shellcode, with 90% coverage.",True,supported,6810,RAG
+claim,"The column 'service' supports the prediction of Shellcode with a SHAP value of +0.248, indicating its importance in the prediction.",True,supported,6810,RAG
+claim,"The column 'sbytes' also supports the prediction of Shellcode with a SHAP value of +0.206, highlighting its significance in the detection.",True,supported,6810,RAG
+claim,"The column 'ct_src_dport_ltm' supports the prediction of Shellcode with a SHAP value of +0.173, further emphasizing its relevance.",True,supported,6810,RAG
+technique,T1055,True,supported,6810,RAG
+action,Isolate affected systems and networks to prevent further damage and reduce the impact of the incident.,True,supported,6810,RAG
+action,Change system admin passwords and rotate private keys to mitigate potential compromise.,True,supported,6810,RAG
+claim,The alert predicts a 78% probability of shellcode execution.,True,supported,9328,RAG
+claim,The prediction set confirms that shellcode is the most likely outcome.,True,supported,9328,RAG
+claim,"The column ct_dst_src_ltm, which measures the destination source long-term connection, supports the prediction with a SHAP value of +0.140.",True,supported,9328,RAG
+claim,"The column dinpkt, which measures the average packet size, supports the prediction with a SHAP value of +0.125.",True,supported,9328,RAG
+claim,"The column tcprtt, which measures the TCP round-trip time, supports the prediction with a SHAP value of +0.114.",True,supported,9328,RAG
+technique,T1055,True,supported,9328,RAG
+action,Isolate affected systems and networks to prevent further damage.,True,supported,9328,RAG
+action,Change system admin passwords and rotate private keys to mitigate potential compromise.,True,supported,9328,RAG
+claim,The alert predicts a 0.84 probability of Shellcode execution.,True,supported,5242,RAG
+claim,"The prediction set includes Shellcode and Worms, with Shellcode being the most likely outcome.",True,supported,5242,RAG
+claim,The column 'service' supports the prediction of Shellcode with a SHAP value of +0.227.,True,supported,5242,RAG
+claim,The column 'ct_src_dport_ltm' also supports the prediction of Shellcode with a SHAP value of +0.104.,True,supported,5242,RAG
+claim,The column 'proto' supporting Shellcode has a SHAP value of +0.092.,True,supported,5242,RAG
+technique,T1055,True,supported,5242,RAG
+action,Isolate affected systems and networks to prevent further damage.,True,supported,5242,RAG
+action,Change system admin passwords and rotate private keys to mitigate potential compromise.,True,supported,5242,RAG
+claim,"The predicted class is Worms with a calibrated probability of 0.98, indicating a high likelihood of a Worms attack.",True,supported,5323,
+claim,"The prediction set for this alert is Worms with 90% coverage, suggesting that the model is confident in this prediction.",True,supported,5323,
+claim,"The column 'service = http' supports the prediction of Worms with a SHAP value of +0.399, indicating its importance in the prediction.",True,supported,5323,
+claim,"The column 'sbytes = 1296' also supports the prediction of Worms with a SHAP value of +0.309, highlighting its significance.",True,supported,5323,
+technique,T1210,True,supported,5323,
+action,Isolate affected systems and networks including perimeter and internal network containment to prevent further damage and reduce the impact of the incident.,False,invalid or missing citation,5323,
+action,"Change system admin passwords, rotate private keys, and revoke privileged access where compromise is suspected to mitigate potential compromise.",False,invalid or missing citation,5323,
+claim,The alert predicts a Worms attack with a calibrated probability of 53%.,True,supported,15173,
+claim,"The prediction set for this alert is Worms, with 90% coverage.",True,supported,15173,
+claim,The column 'service = http' supports the prediction of Worms with a SHAP value of +0.161.,True,supported,15173,
+claim,The column 'sttl = 254' supports the prediction of Worms with a SHAP value of +0.130.,True,supported,15173,
+technique,T1210,True,supported,15173,
+action,Isolate affected systems and networks including perimeter and internal network containment to prevent further damage.,False,invalid or missing citation,15173,
+action,"Change system admin passwords, rotate private keys and service/application account secrets where compromise is suspected.",False,invalid or missing citation,15173,
+claim,The network alert predicted a Worms attack with a calibrated probability of 0.83.,True,supported,7905,
+claim,The prediction set confirms that the alert is within the Worms category.,True,supported,7905,
+claim,Column sload = 359111104.0 supports the Worms prediction with a SHAP value of +0.383.,True,supported,7905,
+claim,Column dur = 9e-06 supports the Worms prediction with a SHAP value of +0.157.,True,supported,7905,
+claim,Column ct_dst_src_ltm = 1 supports the Worms prediction with a SHAP value of +0.152.,True,supported,7905,
+technique,T1210,True,supported,7905,
+action,Isolate affected systems and networks including perimeter and internal network containment to prevent further spread of the worm.,False,invalid or missing citation,7905,
+action,"Change system admin passwords, rotate private keys, and revoke privileged access where compromise is suspected to mitigate potential compromise.",False,invalid or missing citation,7905,
+claim,"The alert predicts a DoS attack with a 31% probability, based on the model's calibrated prediction.",True,supported,10416,RAG
+claim,"The prediction set includes DoS, suggesting a high likelihood of a DoS-related incident.",True,supported,10416,RAG
+claim,"The column ct_srv_dst supports DoS, indicating that the number of service destination connections is a key factor.",True,supported,10416,RAG
+claim,"The column sttl supports DoS, showing that the standard TCP TTL value is another significant indicator.",True,supported,10416,RAG
+technique,T1499,True,supported,10416,RAG
+action,Isolate affected systems and networks to prevent further damage.,True,supported,10416,RAG
+action,Monitor for signs of threat actor response and gather additional evidence.,True,supported,10416,RAG
+claim,"The network alert predicted a DoS attack with a 37% probability, based on the analysis of network traffic features.",True,supported,9216,
+claim,"The prediction set includes DoS, along with other tactics such as Analysis, Backdoor, and Reconnaissance.",True,supported,9216,
+claim,The column sbytes = 200 supports the DoS prediction with a SHAP value of +0.099.,True,supported,9216,
+claim,The column sttl = 254 also supports the DoS prediction with a SHAP value of +0.085.,True,supported,9216,
+claim,The column proto = idrp supports the DoS prediction with a SHAP value of +0.079.,True,supported,9216,
+technique,T1499,True,supported,9216,
+technique,T1498,True,supported,9216,
+action,Isolate affected systems and networks including perimeter and internal network containment to prevent further damage and reduce the impact of the incident.,False,invalid or missing citation,9216,
+action,"Change system admin passwords, rotate private keys, and revoke privileged access to mitigate potential compromise.",False,invalid or missing citation,9216,
+claim,"The network alert predicted a DoS attack with a 35% probability, based on the analysis of various features.",True,supported,10624,
+claim,"The prediction set includes DoS, Analysis, Backdoor, and Exploits, indicating a complex threat scenario.",True,supported,10624,
+claim,"The column sbytes = 200 supports DoS, as indicated by the SHAP value of +0.077.",True,supported,10624,
+claim,"The column smean = 100 supports DoS, as indicated by the SHAP value of +0.067.",True,supported,10624,
+claim,"The column sttl = 254 supports DoS, as indicated by the SHAP value of +0.064.",True,supported,10624,
+technique,T1499,True,supported,10624,
+action,Isolate affected systems and networks including perimeter and internal network containment to prevent further damage and reduce the impact of the incident.,False,invalid or missing citation,10624,
+action,"Change system admin passwords, rotate private keys, and revoke privileged access to mitigate potential compromise.",False,invalid or missing citation,10624,

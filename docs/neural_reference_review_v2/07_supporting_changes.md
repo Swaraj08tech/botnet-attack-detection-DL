@@ -1,0 +1,10 @@
+# Supporting-code changes
+
+- `src/neural_reference.py`, the original plan, chosen settings and all predictive checkpoints are unchanged. The original training/search implementation is retained as evidence; the reviewed notebook does not call its training functions.
+- `src/neural_reference_finish.py` loads and checks the frozen rows/inputs, independently reproduces all six MLP predictions/metrics and both exact saved LightGBM controls, and verifies fold-local preprocessor transforms. It writes new review tables, not new scientific result files. It also generates one concise result explanation without repeated paragraphs.
+- `scripts/run_neural_reference.py` now executes the reviewed notebook as a fresh-kernel **frozen-model replay**. It preserves source hashes, marks the prior seal pending/stale at run start, records the hash only after saving the actual executed notebook, and never fits a new predictive model.
+- `scripts/verify_neural_reference.py` first rejects stale executed bytes, independently reconstructs results, checks source-bound test evidence, and seals last. `--check-seal` is read-only. `src/neural_reference_seal.py` provides explicit failure messages for later saves; tests cover metadata saves, changed artifacts and pending execution.
+- `scripts/run_neural_reference_tests.py` records passing tests with their exact source hashes in the new review directory. `scripts/check_neural_runtime.py` is a synthetic CPU Conv1D smoke test, separate from all dataset experiments.
+- `scripts/finish_neural_reference_presentation.py` authors the final notebook with a prominent bounded-search limitation, complete counts/false alarms/costs/seed variation, honest result interpretation, and exact Notebook 08/verification handoffs.
+
+The two concise v1 findings/report aliases and latest execution/seal entry points are updated for readability and validity. Their previous versions are archived. Experimental metrics, models, settings, predictions, figures and costs remain byte-exact. Review verification outputs use `neural_reference_review_v2`; no raw data, earlier notebooks, frozen assignments or model-selection protocol are edited.

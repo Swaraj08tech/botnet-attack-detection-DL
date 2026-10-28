@@ -1,0 +1,7 @@
+Feature idea,Choice,Reason
+Total bytes,Keep as a candidate,A simple measure of overall flow size.
+Byte balance,Keep as a candidate,Shows which direction carries more bytes.
+Packet balance,Keep as a candidate,Shows which direction carries more packets.
+Packet rate,Leave out,Similar to rate; its exact calculation needs more checking.
+Source bytes per packet,Leave out,Closely matches the existing smean column.
+Destination bytes per packet,Leave out,Closely matches the existing dmean column.

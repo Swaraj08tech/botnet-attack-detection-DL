@@ -1,0 +1,11 @@
+model,feature_set,macro_f1,accuracy,worms_correct,fit_seconds,status
+logistic,original42,0.41693301424426338,0.77443823428766956,0,33.721545199980028,Earlier fixed-settings control; same selection rows
+logistic,total_only43,0.41761036049508587,0.77472339454773576,0,39.202810199931264,Earlier fixed-settings control; same selection rows
+logistic,total_and_byte44,0.4242170738366331,0.77683358047222528,0,39.966031200019643,Earlier fixed-settings control; same selection rows
+logistic,total_and_packet44,0.41795254350827771,0.77489449070377536,0,73.072730300016701,Earlier fixed-settings control; same selection rows
+logistic,all45,0.42372606778075411,0.77694764457625176,0,70.682054300094009,Earlier fixed-settings control; same selection rows
+decision_tree,original42,0.60928726111291198,0.81618569636135496,7,9.6443019999423996,Earlier fixed-settings control; same selection rows
+decision_tree,total_only43,0.58552303194670197,0.81572943994524916,4,10.788028900045902,Earlier fixed-settings control; same selection rows
+decision_tree,total_and_byte44,0.58569312045178978,0.81555834378920955,4,9.262233400018884,Earlier fixed-settings control; same selection rows
+decision_tree,total_and_packet44,0.58651100460246341,0.81550131173719631,4,7.4326928000664356,Earlier fixed-settings control; same selection rows
+decision_tree,all45,0.5830719288462618,0.81447473480095811,4,12.229156499961393,Earlier fixed-settings control; same selection rows

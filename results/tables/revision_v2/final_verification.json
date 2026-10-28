@@ -1,0 +1,118 @@
+{
+  "status": "PASS",
+  "executed_notebooks": 5,
+  "executed_code_cells": 39,
+  "artifact_entries_reloaded": 232,
+  "protected_project_files": 374,
+  "snapshot_files_verified": 379,
+  "model_prediction_checks": [
+    {
+      "model": "logistic",
+      "feature_set": "original42",
+      "predictions_reproduced": true,
+      "metrics_reproduced": true,
+      "confusions_reproduced": true
+    },
+    {
+      "model": "logistic",
+      "feature_set": "total_only43",
+      "predictions_reproduced": true,
+      "metrics_reproduced": true,
+      "confusions_reproduced": true
+    },
+    {
+      "model": "logistic",
+      "feature_set": "total_and_byte44",
+      "predictions_reproduced": true,
+      "metrics_reproduced": true,
+      "confusions_reproduced": true
+    },
+    {
+      "model": "logistic",
+      "feature_set": "total_and_packet44",
+      "predictions_reproduced": true,
+      "metrics_reproduced": true,
+      "confusions_reproduced": true
+    },
+    {
+      "model": "logistic",
+      "feature_set": "all45",
+      "predictions_reproduced": true,
+      "metrics_reproduced": true,
+      "confusions_reproduced": true
+    },
+    {
+      "model": "decision_tree",
+      "feature_set": "original42",
+      "predictions_reproduced": true,
+      "metrics_reproduced": true,
+      "confusions_reproduced": true
+    },
+    {
+      "model": "decision_tree",
+      "feature_set": "total_only43",
+      "predictions_reproduced": true,
+      "metrics_reproduced": true,
+      "confusions_reproduced": true
+    },
+    {
+      "model": "decision_tree",
+      "feature_set": "total_and_byte44",
+      "predictions_reproduced": true,
+      "metrics_reproduced": true,
+      "confusions_reproduced": true
+    },
+    {
+      "model": "decision_tree",
+      "feature_set": "total_and_packet44",
+      "predictions_reproduced": true,
+      "metrics_reproduced": true,
+      "confusions_reproduced": true
+    },
+    {
+      "model": "decision_tree",
+      "feature_set": "all45",
+      "predictions_reproduced": true,
+      "metrics_reproduced": true,
+      "confusions_reproduced": true
+    },
+    {
+      "model": "lightgbm",
+      "feature_set": "original42",
+      "predictions_reproduced": true,
+      "metrics_reproduced": true,
+      "confusions_reproduced": true
+    },
+    {
+      "model": "lightgbm",
+      "feature_set": "total_only43",
+      "predictions_reproduced": true,
+      "metrics_reproduced": true,
+      "confusions_reproduced": true
+    },
+    {
+      "model": "lightgbm",
+      "feature_set": "total_and_byte44",
+      "predictions_reproduced": true,
+      "metrics_reproduced": true,
+      "confusions_reproduced": true
+    },
+    {
+      "model": "lightgbm",
+      "feature_set": "total_and_packet44",
+      "predictions_reproduced": true,
+      "metrics_reproduced": true,
+      "confusions_reproduced": true
+    },
+    {
+      "model": "lightgbm",
+      "feature_set": "all45",
+      "predictions_reproduced": true,
+      "metrics_reproduced": true,
+      "confusions_reproduced": true
+    }
+  ],
+  "fold_preprocessing_verified": true,
+  "calibration_predictions": 0,
+  "official_test_model_predictions": 0
+}

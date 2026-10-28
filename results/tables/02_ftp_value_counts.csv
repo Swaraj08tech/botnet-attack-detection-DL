@@ -1,0 +1,15 @@
+dataset,feature,value,rows
+train,is_ftp_login,0,172774
+train,is_ftp_login,1,2545
+train,is_ftp_login,2,6
+train,is_ftp_login,4,16
+train,ct_ftp_cmd,0,172774
+train,ct_ftp_cmd,1,2545
+train,ct_ftp_cmd,2,6
+train,ct_ftp_cmd,4,16
+test,is_ftp_login,0,81654
+test,is_ftp_login,1,674
+test,is_ftp_login,2,4
+test,ct_ftp_cmd,0,81652
+test,ct_ftp_cmd,1,670
+test,ct_ftp_cmd,2,10

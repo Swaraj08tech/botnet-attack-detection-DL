@@ -1,0 +1,7 @@
+role,representation,rows,columns,saved_reload_exact
+train,tree_augmented,140273,196,True
+train,scaled_augmented,140273,196,True
+model_selection,tree_augmented,17534,196,True
+model_selection,scaled_augmented,17534,196,True
+calibration,tree_augmented,17534,196,True
+calibration,scaled_augmented,17534,196,True

@@ -1,0 +1,4 @@
+,most similar existing column,spearman with it,spearman between the two balances
+fe_total_bytes,sbytes,0.9646896629320303,
+fe_byte_balance,dmean,-0.9753488675578551,0.9734006261051392
+fe_packet_balance,dmean,-0.9593690582865186,

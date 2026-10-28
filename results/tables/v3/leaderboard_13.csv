@@ -1,0 +1,3 @@
+notebook,model,feature set,runs,macro F1 mean,macro F1 std,accuracy,attack recall,false-positive rate,attack avg precision,Worms correct (of 13),parameters,train minutes per run
+13,"FlowNet scales [3, 5, 7], cross-attention (sqrt)",total_and_byte44,3,0.5954534869576974,0.01132652963826395,0.7918330101517053,0.994609239707279,0.17363095238095239,0.9955847501473309,8.0,85640,2.16457888285319
+13,"FlowNet scales [3, 5, 7], cross-attention (sqrt) + TCN-BiLSTM",total_and_byte44,3,0.6025109227341763,0.010904594046720298,0.7971750123569445,0.9910619518462656,0.15595238095238095,0.9957394207251863,7.666666666666667,147784,2.2877311203214856

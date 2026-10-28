@@ -1,0 +1,11 @@
+{
+  "notebook": "notebooks/02_duplicate_target_ambiguity_and_leakage_investigation.ipynb",
+  "notebook_sha256": "b6c6c62951edfbd226714afecaf16b6f3109c53f8b282f588b2d490efc1963ab",
+  "python": "D:\\projects\\Botnet attack detection\\.venv\\Scripts\\python.exe",
+  "code_cells": 11,
+  "errors": 0,
+  "manifest_sha256": "3a4841ac21e749c3344ec331efaea2e928de2f4368582aa4a5760c20691bbc03",
+  "verified_artifacts": 26,
+  "protected_files": 374,
+  "protected_unchanged": true
+}

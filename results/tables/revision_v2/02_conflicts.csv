@@ -1,0 +1,5 @@
+dataset,target,affected_groups,affected_rows,affected_row_pct
+train,label,229,940,0.53609823144615354
+train,attack_cat,1772,30528,17.410645542115077
+test,label,6,14,0.017004323956663264
+test,attack_cat,575,8809,10.699363552446194

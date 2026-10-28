@@ -1,0 +1,6 @@
+Column,Train Only Values,Test Only Values,Train Unique,Test Unique,Train Missing %,Test Missing %
+proto,"['icmp', 'rtp']",[],133,131,0.0,0.0
+service,[],[],13,13,0.0,0.0
+state,"['ECO', 'PAR', 'URN', 'no']","['ACC', 'CLO']",9,7,0.0,0.0
+attack_cat,[],[],10,10,0.0,0.0
+label,[],[],2,2,0.0,0.0

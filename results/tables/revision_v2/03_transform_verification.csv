@@ -1,0 +1,7 @@
+representation,role,rows,columns,finite,exactly_reproduces_prior,reload_matches
+tree,train,140273,193,True,True,True
+tree,model_selection,17534,193,True,True,True
+tree,calibration,17534,193,True,True,True
+scaled,train,140273,193,True,True,True
+scaled,model_selection,17534,193,True,True,True
+scaled,calibration,17534,193,True,True,True

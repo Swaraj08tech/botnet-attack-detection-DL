@@ -1,0 +1,7 @@
+comparison (first minus second),seeds,mean difference,verdict over all seeds
+A full vs LightGBM,3,-0.09707384470328644,second clearly better
+A full vs MLP,3,0.010730885830458262,depends on the seed
+A full vs B no attention,3,0.020341130968075365,first clearly better
+A full vs C shuffle 1,1,0.024034667126896725,first clearly better
+A full vs C shuffle 2,1,0.0027699067745027284,could be chance
+D BiLSTM vs A full,1,-0.0025417928952728985,could be chance

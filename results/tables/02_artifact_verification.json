@@ -1,0 +1,16 @@
+{
+  "notebook_format_valid": true,
+  "executed_code_cells": 16,
+  "errors": 0,
+  "saved_assignment_and_mask_checksums_match": true,
+  "source_ids_and_labels_preserved": true,
+  "independent_pandas_multiindex_overlap_matches_saved_mask": true,
+  "independent_train_validation_exact_overlap": 0,
+  "group_class_counts_reconcile": true,
+  "raw_and_notebook01_integrity_verified": true,
+  "no_processed_data_or_notebook03": true,
+  "verified_execution_directories": [
+    "notebooks",
+    "."
+  ]
+}
