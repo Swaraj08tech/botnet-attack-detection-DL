@@ -7,8 +7,6 @@ security reports that are checked against trusted sources. The project has two p
 2. **Web application**: FastAPI + React. Upload a flow file, review the predictions, open per-flow explanations and generate a Summary or
    Detailed security report (web and PDF).
 
-![Results page](docs/report_final/screenshots/desktop_results.jpg)
-
 ---
 
 ## Problem statement
