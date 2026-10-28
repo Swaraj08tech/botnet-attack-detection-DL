@@ -1,4 +1,4 @@
-# Botnet and Network Attack Detection (UNSW-NB15)
+# Botnet & Network Attack Detection (UNSW-NB15)
 
 Machine-learning detection of network attacks in recorded traffic flows, with calibrated confidence, exact model explanations and
 security reports that are checked against trusted sources. The project has two parts:
